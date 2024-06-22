@@ -2,11 +2,11 @@ $(document).ready(function () {
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll > 10) {
-      $(".navbar").css("background", "#333");
-      $("a").css("color", "#333");
+      $("nav").css("background", "white");
+      $("a").css("color", "black");
     } else {
-      $("a").css("color", "blue");
-      $(".navbar").css("background", "");
+      $("nav").css("background", "rgba(255, 255, 255, 0.678)");
+      // $("a").css("color", "blue");
     }
   });
 });

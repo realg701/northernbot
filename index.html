@@ -3,7 +3,9 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/svg+xml" href="./public/images/favicon.jpg" />
+    <link rel="icon" type="image/svg+xml" href="favicon.png?v=1" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,105 +17,258 @@
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="#"><img src="./public/images/logo.png" alt="logo"></a>
-        <ul id="navbar">
-            <a href="#">Home</a>
-            <a href="/pages/products.html">Products</a>
-            <a href="/pages/about.html">About</a>
-            <a href="/pages/contact.html">Contact</a>
-        </ul>
-        <div class="dropdown">
-            <button class="dropbtn"><img src="/public/images/svgs/menu_24dp.svg" alt="menu"></button>
-            <div class="dropdown-content">
-                <a href="#">Home</a>
-                <a href="/pages/products.html">Products</a>
-                <a href="/pages/about.html">About</a>
-                <a href="/pages/contact.html">Contact</a>
+    <nav>
+        <div class="custom-navbar">
+            <a href="/"><img class="logo" src="./public/images/logo.png" alt="logo"></a>
+            <ul id="navbar-lg">
+                <a href="/">Home</a>
+                <a href="/pages/products">Products</a>
+                <a href="/pages/about">About</a>
+                <a href="/pages/contact">Contact</a>
+            </ul>
+            <div id="navbar-md" class="dropdown">
+                <button class="dropbtn"><img src="/public/images/svgs/menu_24dp.svg" alt="menu"></button>
+                <div class="dropdown-content">
+                    <a href="/">Home</a>
+                    <a href="/pages/products">Products</a>
+                    <a href="/pages/about">About</a>
+                    <a href="/pages/contact">Contact</a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <div class="spacer"></div>
+    <section class="spacer"><img src="./public/images/header2.png" alt="hero image"></section>
+    <div class="custom-container">
+        <h1>FLOOR SCRUBBER</h1>
+        <p id="startchange">
+            Roof party kale chips fixie viral DIY salvia seitan XOXO Banksy. Chia plaid meggings, DIY Thundercats salvia
+            freegan jean shorts gentrify. Retro four loko meh, banjo bespoke ennui wolf before they sold out vegan
+            keytar
+            gastropub beard seitan fashion axe street art. Cosby sweater American Apparel gluten-free skateboard
+            leggings
+            plaid swag banh mi Williamsburg drinking vinegar, vinyl slow-carb brunch photo booth. Sartorial Etsy
+            Truffaut,
+            small batch banh mi letterpress tousled cardigan leggings 3 wolf moon ethical messenger bag PBR&B. Tofu
+            Schlitz
+            narwhal, banjo Bushwick forage trust fund next level bespoke. Gastropub scenester Truffaut locavore deep v,
+            forage ugh Wes Anderson twee.
+        </p>
+        <p>
+            Pug beard American Apparel post-ironic normcore, aesthetic plaid gentrify narwhal asymmetrical craft beer
+            photo
+            booth gastropub Echo Park selfies. Asymmetrical Etsy church-key Cosby sweater street art, ethical tattooed
+            Portland shabby chic small batch twee scenester hella seitan direct trade. Plaid mlkshk lomo try-hard,
+            Portland
+            High Life selvage cray VHS quinoa. Ennui selfies skateboard, lo-fi iPhone mustache kogi. Tumblr brunch wolf
+            Intelligentsia gluten-free Bushwick. Blog tote bag keytar, twee put a bird on it 8-bit chambray iPhone
+            pop-up
+            Intelligentsia. Brunch ethical quinoa cray, hashtag before they sold out Banksy.
+        </p>
+        <p>
+            +1 wayfarers Schlitz tofu, next level single-origin coffee actually. Butcher fap artisan, Kickstarter beard
+            messenger bag narwhal forage master cleanse normcore irony tofu bicycle rights vegan readymade. Disrupt
+            readymade semiotics cray church-key, Tonx artisan leggings keffiyeh bespoke sriracha VHS photo booth viral
+            8-bit. Viral try-hard chambray Kickstarter YOLO, meh tofu Brooklyn farm-to-table. Actually street art small
+            batch raw denim PBR&B Cosby sweater. Bitters bespoke trust fund ethnic four loko. Flexitarian artisan
+            whatever
+            street art.
+        </p>
+        <p>
+            Deep v Brooklyn authentic, keffiyeh 8-bit Banksy messenger bag. DIY roof party Thundercats Carles. Organic
+            put a
+            bird on it skateboard, banh mi keytar hashtag sartorial McSweeney's meggings Banksy squid ennui before they
+            sold
+            out. Pinterest next level pug you probably haven't heard of them, banjo drinking vinegar flexitarian vegan
+            organic Austin. Mumblecore irony pug, vinyl cred Etsy YOLO Truffaut asymmetrical small batch. Viral Godard
+            sartorial, cred sustainable banh mi post-ironic church-key 8-bit narwhal umami. Bushwick scenester Schlitz
+            Etsy,
+            ennui brunch banjo literally ethical quinoa.
 
-    <p id="startchange">
-        Roof party kale chips fixie viral DIY salvia seitan XOXO Banksy. Chia plaid meggings, DIY Thundercats salvia
-        freegan jean shorts gentrify. Retro four loko meh, banjo bespoke ennui wolf before they sold out vegan keytar
-        gastropub beard seitan fashion axe street art. Cosby sweater American Apparel gluten-free skateboard leggings
-        plaid swag banh mi Williamsburg drinking vinegar, vinyl slow-carb brunch photo booth. Sartorial Etsy Truffaut,
-        small batch banh mi letterpress tousled cardigan leggings 3 wolf moon ethical messenger bag PBR&B. Tofu Schlitz
-        narwhal, banjo Bushwick forage trust fund next level bespoke. Gastropub scenester Truffaut locavore deep v,
-        forage ugh Wes Anderson twee.
-    </p>
-    <p>
-        Pug beard American Apparel post-ironic normcore, aesthetic plaid gentrify narwhal asymmetrical craft beer photo
-        booth gastropub Echo Park selfies. Asymmetrical Etsy church-key Cosby sweater street art, ethical tattooed
-        Portland shabby chic small batch twee scenester hella seitan direct trade. Plaid mlkshk lomo try-hard, Portland
-        High Life selvage cray VHS quinoa. Ennui selfies skateboard, lo-fi iPhone mustache kogi. Tumblr brunch wolf
-        Intelligentsia gluten-free Bushwick. Blog tote bag keytar, twee put a bird on it 8-bit chambray iPhone pop-up
-        Intelligentsia. Brunch ethical quinoa cray, hashtag before they sold out Banksy.
-    </p>
-    <p>
-        +1 wayfarers Schlitz tofu, next level single-origin coffee actually. Butcher fap artisan, Kickstarter beard
-        messenger bag narwhal forage master cleanse normcore irony tofu bicycle rights vegan readymade. Disrupt
-        readymade semiotics cray church-key, Tonx artisan leggings keffiyeh bespoke sriracha VHS photo booth viral
-        8-bit. Viral try-hard chambray Kickstarter YOLO, meh tofu Brooklyn farm-to-table. Actually street art small
-        batch raw denim PBR&B Cosby sweater. Bitters bespoke trust fund ethnic four loko. Flexitarian artisan whatever
-        street art.
-    </p>
-    <p>
-        Deep v Brooklyn authentic, keffiyeh 8-bit Banksy messenger bag. DIY roof party Thundercats Carles. Organic put a
-        bird on it skateboard, banh mi keytar hashtag sartorial McSweeney's meggings Banksy squid ennui before they sold
-        out. Pinterest next level pug you probably haven't heard of them, banjo drinking vinegar flexitarian vegan
-        organic Austin. Mumblecore irony pug, vinyl cred Etsy YOLO Truffaut asymmetrical small batch. Viral Godard
-        sartorial, cred sustainable banh mi post-ironic church-key 8-bit narwhal umami. Bushwick scenester Schlitz Etsy,
-        ennui brunch banjo literally ethical quinoa.
+            Hella mixtape lo-fi cornhole, chia hoodie kale chips. Pop-up DIY banh mi, normcore direct trade mumblecore
+            paleo
+            kale chips photo booth vegan. Carles flexitarian Vice, gentrify biodiesel jean shorts Godard Helvetica chia
+            brunch 3 wolf moon forage fanny pack. Cosby sweater hella Etsy, Schlitz pork belly hashtag gluten-free
+            ethical
+            fashion axe keffiyeh selfies chambray quinoa lo-fi. Wayfarers craft beer drinking vinegar, Portland tote bag
+            wolf put a bird on it Carles ethnic Tonx High Life salvia forage American Apparel. Godard Odd Future selvage
+            farm-to-table ethnic disrupt. Mixtape umami dreamcatcher put a bird on it ethical YOLO Schlitz.
+        </p>
+        <p>
+            Disrupt fap iPhone before they sold out seitan YOLO pug artisan. Photo booth stumptown Pitchfork gluten-free
+            selvage, pickled single-origin coffee fixie Intelligentsia kitsch synth literally asymmetrical. Williamsburg
+            Carles hoodie tofu before they sold out, chambray craft beer. Marfa fanny pack church-key, VHS Truffaut
+            whatever
+            banjo Neutra lo-fi before they sold out kogi deep v. Tattooed asymmetrical put a bird on it, flannel
+            church-key
+            3 wolf moon Pitchfork dreamcatcher Banksy keytar yr flexitarian pug. Sustainable flannel hoodie kale chips
+            occupy Wes Anderson. IPhone Portland flexitarian pickled, gentrify vegan Austin selvage organic butcher
+            skateboard Wes Anderson direct trade mixtape occupy.
 
-        Hella mixtape lo-fi cornhole, chia hoodie kale chips. Pop-up DIY banh mi, normcore direct trade mumblecore paleo
-        kale chips photo booth vegan. Carles flexitarian Vice, gentrify biodiesel jean shorts Godard Helvetica chia
-        brunch 3 wolf moon forage fanny pack. Cosby sweater hella Etsy, Schlitz pork belly hashtag gluten-free ethical
-        fashion axe keffiyeh selfies chambray quinoa lo-fi. Wayfarers craft beer drinking vinegar, Portland tote bag
-        wolf put a bird on it Carles ethnic Tonx High Life salvia forage American Apparel. Godard Odd Future selvage
-        farm-to-table ethnic disrupt. Mixtape umami dreamcatcher put a bird on it ethical YOLO Schlitz.
-    </p>
-    <p>
-        Disrupt fap iPhone before they sold out seitan YOLO pug artisan. Photo booth stumptown Pitchfork gluten-free
-        selvage, pickled single-origin coffee fixie Intelligentsia kitsch synth literally asymmetrical. Williamsburg
-        Carles hoodie tofu before they sold out, chambray craft beer. Marfa fanny pack church-key, VHS Truffaut whatever
-        banjo Neutra lo-fi before they sold out kogi deep v. Tattooed asymmetrical put a bird on it, flannel church-key
-        3 wolf moon Pitchfork dreamcatcher Banksy keytar yr flexitarian pug. Sustainable flannel hoodie kale chips
-        occupy Wes Anderson. IPhone Portland flexitarian pickled, gentrify vegan Austin selvage organic butcher
-        skateboard Wes Anderson direct trade mixtape occupy.
+            Art party DIY 90's hoodie lo-fi. Post-ironic master cleanse lo-fi Banksy, ethnic flannel farm-to-table Etsy.
+            Helvetica authentic shabby chic High Life Blue Bottle slow-carb. Fanny pack you probably haven't heard of
+            them
+            Godard, Shoreditch Cosby sweater deep v twee Banksy High Life. Fingerstache master cleanse tattooed try-hard
+            kale chips gentrify, Odd Future mlkshk umami leggings four loko drinking vinegar lo-fi 3 wolf moon. Tousled
+            cardigan Portland Odd Future 90's. Vinyl leggings food truck street art 3 wolf moon next level.
+        </p>
+        <p>
+            Authentic mumblecore keffiyeh chia, flexitarian Bushwick McSweeney's mlkshk cray Vice gluten-free sartorial
+            hoodie small batch meggings. PBR&B disrupt deep v, kitsch Schlitz Shoreditch wayfarers gentrify bitters
+            shabby
+            chic. Odd Future disrupt gentrify, church-key Cosby sweater drinking vinegar beard blog distillery. Tofu
+            normcore sartorial polaroid trust fund viral bitters scenester. Food truck locavore wayfarers Tonx, umami
+            chillwave beard put a bird on it Intelligentsia. Forage trust fund Truffaut mumblecore. Chia bitters direct
+            trade Etsy, wolf mixtape gluten-free freegan scenester art party Truffaut.
+        </p>
+        <p>
+            3 wolf moon artisan vegan flexitarian, slow-carb Schlitz YOLO four loko Tonx. Tonx ugh put a bird on it yr,
+            3
+            wolf moon sustainable trust fund typewriter. Bushwick locavore raw denim before they sold out vinyl. Quinoa
+            fixie fingerstache Thundercats McSweeney's 3 wolf moon. Asymmetrical normcore Neutra swag. Street art seitan
+            Portland hoodie, photo booth master cleanse banh mi Brooklyn synth typewriter PBR&B. Tofu narwhal tousled
+            Marfa.
+        </p>
+        <p>
+            You probably haven't heard of them tattooed Etsy, tote bag skateboard hashtag keffiyeh Helvetica fanny pack
+            bicycle rights. Umami Intelligentsia freegan, Wes Anderson 8-bit normcore slow-carb tattooed lo-fi fanny
+            pack
+            gluten-free mlkshk. Banjo Neutra YOLO, wolf pour-over put a bird on it vinyl hashtag blog letterpress
+            actually
+            dreamcatcher viral. Mixtape semiotics iPhone, sustainable vegan ethical swag roof party keytar leggings.
+            Williamsburg ethical Bushwick jean shorts, Tumblr skateboard aesthetic bicycle rights retro Blue Bottle
+            polaroid
+            cliche semiotics occupy. VHS PBR fingerstache, iPhone leggings Kickstarter Tonx normcore retro 90's paleo
+            direct
+            trade Pitchfork. Lo-fi Truffaut craft beer, forage +1 bitters 8-bit retro master cleanse jean shorts
+            chillwave.
+        </p>
+    </div>
 
-        Art party DIY 90's hoodie lo-fi. Post-ironic master cleanse lo-fi Banksy, ethnic flannel farm-to-table Etsy.
-        Helvetica authentic shabby chic High Life Blue Bottle slow-carb. Fanny pack you probably haven't heard of them
-        Godard, Shoreditch Cosby sweater deep v twee Banksy High Life. Fingerstache master cleanse tattooed try-hard
-        kale chips gentrify, Odd Future mlkshk umami leggings four loko drinking vinegar lo-fi 3 wolf moon. Tousled
-        cardigan Portland Odd Future 90's. Vinyl leggings food truck street art 3 wolf moon next level.
-    </p>
-    <p>
-        Authentic mumblecore keffiyeh chia, flexitarian Bushwick McSweeney's mlkshk cray Vice gluten-free sartorial
-        hoodie small batch meggings. PBR&B disrupt deep v, kitsch Schlitz Shoreditch wayfarers gentrify bitters shabby
-        chic. Odd Future disrupt gentrify, church-key Cosby sweater drinking vinegar beard blog distillery. Tofu
-        normcore sartorial polaroid trust fund viral bitters scenester. Food truck locavore wayfarers Tonx, umami
-        chillwave beard put a bird on it Intelligentsia. Forage trust fund Truffaut mumblecore. Chia bitters direct
-        trade Etsy, wolf mixtape gluten-free freegan scenester art party Truffaut.
-    </p>
-    <p>
-        3 wolf moon artisan vegan flexitarian, slow-carb Schlitz YOLO four loko Tonx. Tonx ugh put a bird on it yr, 3
-        wolf moon sustainable trust fund typewriter. Bushwick locavore raw denim before they sold out vinyl. Quinoa
-        fixie fingerstache Thundercats McSweeney's 3 wolf moon. Asymmetrical normcore Neutra swag. Street art seitan
-        Portland hoodie, photo booth master cleanse banh mi Brooklyn synth typewriter PBR&B. Tofu narwhal tousled Marfa.
-    </p>
-    <p>
-        You probably haven't heard of them tattooed Etsy, tote bag skateboard hashtag keffiyeh Helvetica fanny pack
-        bicycle rights. Umami Intelligentsia freegan, Wes Anderson 8-bit normcore slow-carb tattooed lo-fi fanny pack
-        gluten-free mlkshk. Banjo Neutra YOLO, wolf pour-over put a bird on it vinyl hashtag blog letterpress actually
-        dreamcatcher viral. Mixtape semiotics iPhone, sustainable vegan ethical swag roof party keytar leggings.
-        Williamsburg ethical Bushwick jean shorts, Tumblr skateboard aesthetic bicycle rights retro Blue Bottle polaroid
-        cliche semiotics occupy. VHS PBR fingerstache, iPhone leggings Kickstarter Tonx normcore retro 90's paleo direct
-        trade Pitchfork. Lo-fi Truffaut craft beer, forage +1 bitters 8-bit retro master cleanse jean shorts chillwave.
-    </p>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-between p-4" style="background-color: #6351ce">
+            <!-- Left -->
+            <div class="me-5">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div class="social-links">
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="" class="text-white me-4">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold">Company name</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            Here you can use rows and columns to organize your footer
+                            content. Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Products</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            <a href="#!" class="text-white">MDBootstrap</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">MDWordPress</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">BrandFlow</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Bootstrap Angular</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Useful links</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p>
+                            <a href="#!" class="text-white">Your Account</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Become an Affiliate</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Shipping Rates</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-white">Help</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold">Contact</h6>
+                        <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                            style="width: 60px; background-color: #7c4dff; height: 2px" />
+                        <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                        <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
     <script language="JavaScript" type="text/javascript" src="main.js"></script>
 </body>
 

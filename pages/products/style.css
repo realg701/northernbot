@@ -1,0 +1,34 @@
+#startchange {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 32px auto;
+  gap: 16px;
+}
+
+#startchange a {
+  text-decoration: none;
+}
+
+.card {
+  max-width: 280px;
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 8px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.card-container {
+  padding: 16px;
+}
+.card-container h4 {
+  font-size: 24px !important;
+}
