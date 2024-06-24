@@ -98,16 +98,16 @@ $("footer").ready(function () {
                 <hr class="mb-4 mt-0 d-inline-block mx-auto"
                     style="width: 60px; background-color: #7c4dff; height: 2px" />
                 <p>
-                    <a href="#!" class="text-white">MDBootstrap</a>
+                    <a href="#!" class="text-white">Home</a>
                 </p>
                 <p>
-                    <a href="#!" class="text-white">MDWordPress</a>
+                    <a href="#!" class="text-white">Products</a>
                 </p>
                 <p>
-                    <a href="#!" class="text-white">BrandFlow</a>
+                    <a href="#!" class="text-white">About</a>
                 </p>
                 <p>
-                    <a href="#!" class="text-white">Bootstrap Angular</a>
+                    <a href="#!" class="text-white">Contact</a>
                 </p>
             </div>
             <!-- Grid column -->
@@ -132,7 +132,7 @@ $("footer").ready(function () {
 <!-- Copyright -->
 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
     © 2024 Copyright:
-    <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    <a class="text-white" href="/">NorthernBot.com</a>
 </div>
 <!-- Copyright -->`);
 });
