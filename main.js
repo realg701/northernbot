@@ -11,9 +11,12 @@ $(document).ready(function () {
   });
 });
 
+const logo = "./public/images/logo.png";
+const pagesLogo = "../../public/images/logo.png";
+
 $("nav").ready(function () {
   $("nav").append(`<div class="custom-navbar">
-    <a href="/"><img class="logo" src="../../public/images/logo.png" alt="logo"></a>
+    <a href="/"><img class="logo" src=${logo && pagesLogo} alt="logo"></a>
     <ul id="navbar-lg">
         <a href="/">Home</a>
         <a href="/pages/products">Products</a>
