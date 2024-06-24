@@ -10,26 +10,29 @@ $(document).ready(function () {
     }
   });
 });
-
+const currentURL = window.location.href;
 const logo = "./public/images/logo.png";
 const pagesLogo = "../../public/images/logo.png";
+const preFix = "" && "/northernbot";
 
 $("nav").ready(function () {
   $("nav").append(`<div class="custom-navbar">
-    <a href="/"><img class="logo" src=${logo && pagesLogo} alt="logo"></a>
+    <a href="/"><img class="logo" src=${
+      currentURL == `${preFix}/` ? logo : pagesLogo
+    } alt="logo"></a>
     <ul id="navbar-lg">
-        <a href="/">Home</a>
-        <a href="/pages/products">Products</a>
-        <a href="/pages/about">About</a>
-        <a href="/pages/contact">Contact</a>
+        <a href="${preFix}/">Home</a>
+        <a href="${preFix}/pages/products">Products</a>
+        <a href="${preFix}/pages/about">About</a>
+        <a href="${preFix}/pages/contact">Contact</a>
     </ul>
     <div id="navbar-md" class="dropdown">
         <button class="dropbtn"><img src="/public/images/svgs/menu_24dp.svg" alt="menu"></button>
         <div class="dropdown-content">
-            <a href="/">Home</a>
-            <a href="/pages/products">Products</a>
-            <a href="/pages/about">About</a>
-            <a href="/pages/contact">Contact</a>
+            <a href="${preFix}/">Home</a>
+            <a href="${preFix}/pages/products">Products</a>
+            <a href="${preFix}/pages/about">About</a>
+            <a href="${preFix}/pages/contact">Contact</a>
         </div>
     </div>
 </div>`);

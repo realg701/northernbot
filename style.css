@@ -47,7 +47,7 @@ nav {
 }
 
 #navbar-lg {
-  /* width: 100%; */
+  margin-top: 16px;
 }
 
 #navbar-lg a {
