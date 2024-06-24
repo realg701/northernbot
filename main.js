@@ -1,24 +1,28 @@
+// Apply CSS On Scroll
 $(document).ready(function () {
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if (scroll > 10) {
-      $("nav").css("background", "white");
+      $("nav").css("background", "#64c6ff");
       $("a").css("color", "black");
     } else {
-      $("nav").css("background", "rgba(255, 255, 255, 0.678)");
+      $("nav").css("background", "#ffffff88");
       // $("a").css("color", "blue");
     }
   });
 });
+
 const currentURL = window.location.href;
 const logo = "./public/images/logo.png";
 const pagesLogo = "../../public/images/logo.png";
-const preFix = "" && "/northernbot";
+const gitHubURL = currentURL.includes("github");
+const preFix = gitHubURL ? "/northernbot/" : "";
 
+// NavBar
 $("nav").ready(function () {
   $("nav").append(`<div class="custom-navbar">
     <a href="/"><img class="logo" src=${
-      currentURL == `${preFix}/` ? logo : pagesLogo
+      gitHubURL ? logo : pagesLogo
     } alt="logo"></a>
     <ul id="navbar-lg">
         <a href="${preFix}/">Home</a>
@@ -37,10 +41,10 @@ $("nav").ready(function () {
     </div>
 </div>`);
 });
-
+// Footer
 $("footer").ready(function () {
   $("footer").append(`<!-- Section: Social media -->
-<section class="d-flex justify-content-between p-4" style="background-color: #6351ce">
+<section class="d-flex justify-content-between p-4" style="background-color:#64c6ff;color:black">
     <!-- Left -->
     <div class="me-5">
         <span>Get connected with us on social networks:</span>
@@ -50,10 +54,10 @@ $("footer").ready(function () {
     <!-- Right -->
     <div class="social-links">
         <a href="" class="text-white me-4">
-            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-facebook-f" style="color:black"></i>
         </a>
         <a href="" class="text-white me-4">
-            <i class="fab fa-twitter"></i>
+            <i class="fab fa-twitter" style="color:black"></i>
         </a>
         <a href="" class="text-white me-4">
             <i class="fab fa-google"></i>
@@ -63,9 +67,6 @@ $("footer").ready(function () {
         </a>
         <a href="" class="text-white me-4">
             <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="text-white me-4">
-            <i class="fab fa-github"></i>
         </a>
     </div>
     <!-- Right -->
@@ -80,7 +81,7 @@ $("footer").ready(function () {
             <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <!-- Content -->
-                <h6 class="text-uppercase fw-bold">Company name</h6>
+                <a href="${preFix}/"><h6 class="text-uppercase fw-bold text-white">NorthernBot</h6></a>
                 <hr class="mb-4 mt-0 d-inline-block mx-auto"
                     style="width: 60px; background-color: #7c4dff; height: 2px" />
                 <p>
@@ -94,7 +95,7 @@ $("footer").ready(function () {
             <!-- Grid column -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
-                <h6 class="text-uppercase fw-bold">Products</h6>
+                <a href="${preFix}/pages/products"><h6 class="text-uppercase fw-bold text-white">Products</h6></a>
                 <hr class="mb-4 mt-0 d-inline-block mx-auto"
                     style="width: 60px; background-color: #7c4dff; height: 2px" />
                 <p>
@@ -136,7 +137,7 @@ $("footer").ready(function () {
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->
-                <h6 class="text-uppercase fw-bold">Contact</h6>
+                <a href="${preFix}/pages/contact"><h6 class="text-uppercase fw-bold text-white">Contact</h6></a>
                 <hr class="mb-4 mt-0 d-inline-block mx-auto"
                     style="width: 60px; background-color: #7c4dff; height: 2px" />
                 <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
@@ -153,7 +154,7 @@ $("footer").ready(function () {
 
 <!-- Copyright -->
 <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-    © 2020 Copyright:
+    © 2024 Copyright:
     <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
 </div>
 <!-- Copyright -->`);
