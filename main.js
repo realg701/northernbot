@@ -16,12 +16,12 @@ const currentURL = window.location.href;
 const gitHubURL = currentURL.includes("github");
 
 const logo = currentURL.includes("pages") ? "../.." : ".";
-const preFix = gitHubURL ? "/northernbot/" : "";
+const preFix = gitHubURL ? "/northernbot" : "";
 
 // NavBar
 $("nav").ready(function () {
   $("nav").append(`<div class="custom-navbar">
-    <a href="/"><img class="logo" src="${logo}/public/images/logo.png" alt="logo"></a>
+    <a href="${preFix}/"><img class="logo" src="${logo}/public/images/logo.png" alt="logo"></a>
     <ul id="navbar-lg">
         <a href="${preFix}/">Home</a>
         <a href="${preFix}/pages/products">Products</a>
