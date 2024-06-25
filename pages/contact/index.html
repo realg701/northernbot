@@ -1,127 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="../../style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../../style.css" />
     <link rel="icon" type="image/svg+xml" href="../../favicon.png" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Contact | NorthernBot</title>
     <meta name="description" content="High-performance Floor Scrubber" />
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <!-- Navbar content will display here -->
+      <!-- Navbar content will display here -->
     </nav>
 
-    <section class="spacer"><img src="../../public/images/header2.png" alt="hero image"></section>
+    <section class="spacer">
+      <img src="../../public/images/header2.png" alt="hero image" />
+    </section>
 
     <div class="custom-container">
-        <h1>FLOOR SCRUBBER</h1>
+      <h1>Contact NortherBot</h1>
+      <div class="contact-card">
+        <div class="contact-card-text">
+          <p>
+            Please feel free to contact us if you have any questions or
+            enquiries. Whether you require information about our products or
+            just want to ask us something about cleaning in general, we would
+            love to hear from you! <br /><br />
+            You can send us an email at
+            <a href="mailto:office@northernbot.com"
+              >office@mccommercialcleaning.com</a
+            >, call us
+            <a
+              href="tel:(905)
+                    632-0559"
+              >(905) 632-0559</a
+            >
+            or contact us via the form below.
+          </p>
+          <br />
+        </div>
+        <ul class="info-cards">
+          <li class="info-card">
+            <div class="">
+              <img src="./images/svgs/address.svg" alt="" />
+            </div>
+            <p class="">Address</p>
+            <p class="">
+              Building 8, Liancheng Zhigu Digital Industry Incubation Center,
+              Linzi District, Zibo City
+            </p>
+          </li>
+          <li class="info-card">
+            <div class="">
+              <img src="./images/svgs/mail.svg" alt="" />
+            </div>
+            <p class="">E-mail</p>
+            <p class="">cma@cleanmagicindustry.com</p>
+          </li>
+          <li class="info-card">
+            <div class="">
+              <img src="./images/svgs/whatsapp.svg" alt="" />
+            </div>
+            <p class="">WhatsApp</p>
+            <p class="">+86 13864311240</p>
+          </li>
+          <li class="info-card">
+            <div class="">
+              <img src="./images/svgs/phone.svg" alt="" />
+            </div>
+            <p class="">Phone</p>
+            <p class="">+86-13678630519</p>
+          </li>
+        </ul>
+      </div>
+      <div id="form" class="form">
+        <!-- 
+    =======================================================================
+
+    This is a working contact form. To receive email, 
+    Replace YOUR_ACCESS_KEY_HERE with your actual Access Key.
+
+    Create Access Key here 👉 https://web3forms.com/
+
+    =======================================================================
+ -->
+
+        <div class="flex items-center min-h-screen">
+          <div class="container mx-auto">
+            <div
+              class="max-w-md mx-auto my-10 bg-white p-5 rounded-md shadow-sm"
+            >
+              <div class="text-center">
+                <h1 class="my-3 text-3xl font-semibold">Contact Us</h1>
+                <p class="text-gray-400 dark:text-gray-400">
+                  Fill up the form below to send us a message.
+                </p>
+              </div>
+              <div class="m-7">
+                <form
+                  action="https://api.web3forms.com/submit"
+                  method="POST"
+                  id="form"
+                >
+                  <input
+                    type="hidden"
+                    name="access_key"
+                    value="4a75f8c1-9e2b-405a-bca5-99cf20d95eb1"
+                  />
+                  <input
+                    type="hidden"
+                    name="subject"
+                    value="New Submission from Web3Forms"
+                  />
+                  <input
+                    type="checkbox"
+                    name="botcheck"
+                    id=""
+                    style="display: none"
+                  />
+
+                  <div class="mb-6">
+                    <label
+                      for="name"
+                      class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                      >Full Name</label
+                    >
+                    <input
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="John Doe"
+                      required
+                      class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                    />
+                  </div>
+                  <div class="mb-6">
+                    <label
+                      for="email"
+                      class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                      >Email Address</label
+                    >
+                    <input
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="you@company.com"
+                      required
+                      class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                    />
+                  </div>
+                  <div class="mb-6">
+                    <label
+                      for="phone"
+                      class="text-sm text-gray-600 dark:text-gray-400"
+                      >Phone Number</label
+                    >
+                    <input
+                      type="text"
+                      name="phone"
+                      id="phone"
+                      placeholder="+1 (555) 1234-567"
+                      required
+                      class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                    />
+                  </div>
+                  <div class="mb-6">
+                    <label
+                      for="message"
+                      class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                      >Your Message</label
+                    >
+
+                    <textarea
+                      rows="5"
+                      name="message"
+                      id="message"
+                      placeholder="Your Message"
+                      class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="mb-6">
+                    <button
+                      type="submit"
+                      class="w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none"
+                    >
+                      Send Message
+                    </button>
+                  </div>
+                  <p
+                    class="text-base text-center text-gray-400"
+                    id="result"
+                  ></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="w101-grid-col col-2-3 col-1-1@md">
-        <div class="w101-contact-meta">
-            <div class="w101-contact-meta-wrap lazy" data-ll-status="observed">
-                <div class="w101-contact-meta-title">
-                    Shandong Dingjie <br> Shengshi Environmental Prote </div>
-                <div class="w101-contact-meta-content">
-                    <ul class="w101-contact-meta-list">
-                        <li class="w101-contact-meta-item">
-                            <div class="w101-contact-meta-icon">
-                                <svg t="1705563706796" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                                    xmlns="http://www.w3.org/2000/svg" p-id="11618" width="40" height="40">
-                                    <path
-                                        d="M512 74.887967c183.767635 0 332.481328 148.713693 332.481328 333.012448 0 132.248963-173.145228 396.746888-269.278008 510.937759-15.93361 18.589212-38.771784 29.211618-63.20332 29.211619-23.900415 0-47.80083-10.622407-63.20332-29.211619-96.6639-114.190871-269.278008-378.157676-269.278008-510.937759 0-183.236515 148.713693-333.012448 332.481328-333.012448z m15.40249 804.116182c103.568465-122.688797 254.406639-367.004149 254.406639-470.572614 0-149.244813-121.095436-270.340249-269.809129-270.340249S241.659751 258.655602 241.659751 408.431535c0 103.568465 150.838174 347.883817 254.406639 470.572614 4.248963 4.780083 9.560166 7.435685 15.40249 7.435685 6.904564 0 12.215768-2.655602 15.93361-7.435685zM512 242.721992c80.73029 0 145.526971 65.327801 145.526971 145.526971s-65.327801 145.526971-145.526971 145.526971C431.26971 533.775934 366.473029 468.448133 366.473029 388.248963c0-80.73029 64.79668-145.526971 145.526971-145.526971z m0 228.912863c45.676349 0 83.385892-37.709544 83.385892-83.385892S557.676349 304.863071 512 304.863071s-83.385892 37.709544-83.385892 83.385892 37.178423 83.385892 83.385892 83.385892z"
-                                        p-id="11619" fill="#ffffff"></path>
-                                </svg>
-                            </div>
-                            <div class="w101-contact-meta-label">
-                                Address </div>
-                            <div class="w101-contact-meta-value">
-                                Building 8, Liancheng Zhigu Digital Industry Incubation Center, Linzi District, Zibo
-                                City</div>
-                        </li>
-                        <li class="w101-contact-meta-item">
-                            <div class="w101-contact-meta-icon">
-                                <svg t="1705563902252" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                                    xmlns="http://www.w3.org/2000/svg" p-id="12740" width="40" height="40">
-                                    <path
-                                        d="M874.666667 181.333333H149.333333c-40.533333 0-74.666667 34.133333-74.666666 74.666667v512c0 40.533333 34.133333 74.666667 74.666666 74.666667h725.333334c40.533333 0 74.666667-34.133333 74.666666-74.666667V256c0-40.533333-34.133333-74.666667-74.666666-74.666667z m-725.333334 64h725.333334c6.4 0 10.666667 4.266667 10.666666 10.666667v25.6L512 516.266667l-373.333333-234.666667V256c0-6.4 4.266667-10.666667 10.666666-10.666667z m725.333334 533.333334H149.333333c-6.4 0-10.666667-4.266667-10.666666-10.666667V356.266667l356.266666 224c4.266667 4.266667 10.666667 4.266667 17.066667 4.266666s12.8-2.133333 17.066667-4.266666l356.266666-224V768c0 6.4-4.266667 10.666667-10.666666 10.666667z"
-                                        fill="#ffffff" p-id="12741"></path>
-                                </svg>
-                            </div>
-                            <div class="w101-contact-meta-label">
-                                E-mail </div>
-                            <div class="w101-contact-meta-value">
-                                cma@cleanmagicindustry.com</div>
-                        </li>
-                        <li class="w101-contact-meta-item">
-                            <div class="w101-contact-meta-icon">
-                                <svg t="1705563947116" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                                    xmlns="http://www.w3.org/2000/svg" p-id="14740" width="40" height="40">
-                                    <path
-                                        d="M735.4 597.819l-85.418-39.658a19.261 19.261 0 0 0-22.193 4.328l-35.631 38.176c-5.429 5.817-13.877 7.716-21.254 4.735-31.315-12.656-113.351-51.863-150.351-127.374-3.063-6.252-2.6-13.66 1.309-19.42l24.611-36.27a19.264 19.264 0 0 0 1.75-18.44l-38.958-90.381a19.263 19.263 0 0 0-17.689-11.637h-27.591a19.154 19.154 0 0 0-11.42 3.748c-18.306 13.565-74.343 63.813-36.92 148.42 44.302 100.161 177.208 269.665 360.195 248.476 0 0 74.515-19.062 70.683-88.416-0.389-7.057-4.712-13.31-11.123-16.287z"
-                                        p-id="14741" fill="#ffffff"></path>
-                                    <path
-                                        d="M832.185 189.758C748.954 106.526 638.293 60.69 520.585 60.69s-228.368 45.837-311.6 129.068S79.917 383.65 79.917 501.357c0 77.265 20.138 152.713 58.382 219.271L62.747 963.311l243.14-77.053c65.4 36.532 139.269 55.768 214.698 55.768 117.707 0 228.368-45.837 311.6-129.068s129.068-193.893 129.068-311.6-45.836-228.369-129.068-311.6z m-311.6 679.462c-67.7 0-133.862-18.54-191.335-53.617l-14.154-8.639-141.37 44.802 43.911-141.05-8.897-14.181c-36.646-58.418-56.017-125.908-56.017-195.178 0-202.84 165.022-367.862 367.862-367.862s367.862 165.022 367.862 367.862S723.425 869.22 520.585 869.22z"
-                                        p-id="14742" fill="#ffffff"></path>
-                                </svg>
-                            </div>
-                            <div class="w101-contact-meta-label">
-                                WhatsApp </div>
-                            <div class="w101-contact-meta-value">
-                                +86 13864311240</div>
-                        </li>
-                        <li class="w101-contact-meta-item">
-                            <div class="w101-contact-meta-icon">
-                                <svg t="1705563974692" class="icon" viewBox="0 0 1024 1024" version="1.1"
-                                    xmlns="http://www.w3.org/2000/svg" p-id="15917" width="40" height="40">
-                                    <path
-                                        d="M817.066667 586.666667c-32-4.266667-64-12.8-96-23.466667-38.4-14.933333-81.066667-4.266667-110.933334 23.466667l-27.733333 27.733333c-70.4-44.8-130.133333-102.4-172.8-172.8l27.733333-27.733333c27.733333-29.866667 38.4-72.533333 23.466667-110.933334-10.666667-29.866667-19.2-61.866667-23.466667-96-6.4-51.2-51.2-89.6-104.533333-89.6h-108.8c-32 0-59.733333 12.8-78.933333 34.133334-19.2 21.333333-29.866667 51.2-27.733334 81.066666 12.8 117.333333 53.333333 230.4 117.333334 328.533334 57.6 91.733333 136.533333 170.666667 228.266666 228.266666 98.133333 64 211.2 104.533333 328.533334 117.333334h8.533333c25.6 0 51.2-10.666667 70.4-27.733334 21.333333-19.2 34.133333-49.066667 34.133333-76.8v-108.8c4.266667-53.333333-36.266667-98.133333-87.466666-106.666666z m25.6 106.666666v108.8c0 10.666667-4.266667 23.466667-12.8 29.866667-8.533333 8.533333-19.2 10.666667-29.866667 10.666667-106.666667-10.666667-211.2-49.066667-300.8-106.666667-83.2-53.333333-155.733333-125.866667-209.066667-209.066667-57.6-89.6-96-194.133333-106.666666-300.8 0-10.666667 2.133333-23.466667 10.666666-32 8.533333-8.533333 19.2-12.8 29.866667-12.8h108.8c21.333333 0 38.4 14.933333 40.533333 34.133334 4.266667 36.266667 14.933333 74.666667 27.733334 108.8 6.4 14.933333 2.133333 32-8.533334 42.666666l-46.933333 46.933334c-10.666667 10.666667-12.8 25.6-4.266667 38.4 55.466667 96 134.4 174.933333 230.4 230.4 12.8 6.4 27.733333 4.266667 38.4-4.266667l46.933334-46.933333c10.666667-10.666667 27.733333-14.933333 42.666666-8.533334 36.266667 12.8 72.533333 21.333333 108.8 27.733334 19.2 2.133333 34.133333 19.2 34.133334 42.666666 0-2.133333 0-2.133333 0 0z"
-                                        fill="#ffffff" p-id="15918"></path>
-                                </svg>
-                            </div>
-                            <div class="w101-contact-meta-label">
-                                Phone </div>
-                            <div class="w101-contact-meta-value">
-                                +86-13678630519</div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="w101-contact-user">
-            <div class="w101-contact-user-wrap">
-                <ul class="w101-contact-user-list">
-                    <li class="w101-contact-user-item">
-                        <dl>
-                            <dt>Contacts</dt>
-                            <dd>Position: Manager Zhang</dd>
-                            <dd>Mobile phone: +86-13678630519</dd>
-                            <dd>Telephone: 0533-2090035</dd>
-                            <dd>Email: cma@cleanmagicindustry.com</dd>
-                            <dd></dd>
-                        </dl>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <footer class="text-center text-lg-start text-white" style="background-color: #1c2331">
-        <!-- Footer content will display here -->
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: #1c2331"
+    >
+      <!-- Footer content will display here -->
     </footer>
-
-    <script language="JavaScript" type="text/javascript" src="../../main.js"></script>
-</body>
-
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="./main.js"
+    ></script>
+    <script
+      language="JavaScript"
+      type="text/javascript"
+      src="../../main.js"
+    ></script>
+  </body>
 </html>
