@@ -4,10 +4,8 @@ $(document).ready(function () {
     var scroll = $(window).scrollTop();
     if (scroll > 10) {
       $("nav").css("background", "#64c6ff");
-      //   $("a").css("color", "black");
     } else {
       $("nav").css("background", "#ffffff88");
-      // $("a").css("color", "blue");
     }
   });
 
