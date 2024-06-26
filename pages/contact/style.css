@@ -28,15 +28,13 @@
 
 .info-card {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 16px;
   list-style: none;
-  max-width: 250px;
-  min-width: 200px;
-  height: 200px;
-  display: flex;
+  width: 220px;
+  height: auto;
   flex-direction: column;
+  margin: 0 auto;
+  gap: 8px;
 }
 .info-card p {
   margin: 0;

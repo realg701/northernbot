@@ -51,7 +51,7 @@ $(".custom-container").ready(function () {
   <span class="loader">
     <span class="loader-inner"></span>
   </span>
-</div>;
+</div>
 `);
 });
 
