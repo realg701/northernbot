@@ -165,20 +165,25 @@ nav {
 }
 
 #startchange {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 24px;
+  /* width: 100%; */
 }
 #startchange video {
   border-radius: 22px !important;
   box-shadow: 0 4px 16px 2px rgba(0, 0, 0, 0.4);
 }
-@media (width > 800px) {
-  #startchange video {
-    width: 70%;
-  }
+
+#startchange > img {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 400px;
+  height: 400px;
 }
 
 #startchange .hot-product {
