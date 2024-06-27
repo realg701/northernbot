@@ -28,6 +28,7 @@ $("nav").ready(function () {
     <ul id="navbar-lg">
         <a class="home-page" href="${preFix}/">Home</a>
         <a class="products-page" href="${preFix}/pages/products">Products</a>
+        <a class="about-page" href="${preFix}/pages/location">Location</a>
         <a class="about-page" href="${preFix}/pages/about">About</a>
         <a class="contact-page" href="${preFix}/pages/contact">Contact</a>
     </ul>
@@ -36,6 +37,7 @@ $("nav").ready(function () {
         <div class="dropdown-content">
             <a href="${preFix}/">Home</a>
             <a href="${preFix}/pages/products">Products</a>
+            <a class="about-page" href="${preFix}/pages/location">Location</a>
             <a href="${preFix}/pages/about">About</a>
             <a href="${preFix}/pages/contact">Contact</a>
         </div>
@@ -49,7 +51,7 @@ $(".custom-container").ready(function () {
   $(".custom-container").append(`
 <div class="loader-wrapper">
   <span class="loader">
-    <span class="loader-inner"><img src="${logo}/public/images/favicon-2.png" alt="logo"/></span>
+    <span class="loader-inner"><img src="${logo}/public/images/loader.png" alt="logo"/></span>
   </span>
 </div>
 `);
