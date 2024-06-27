@@ -14,6 +14,15 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $("p").mouseover(function () {
+    $("p").css("background-color", "yellow");
+  });
+  $("p").mouseout(function () {
+    $("p").css("background-color", "lightgray");
+  });
+});
+
 const currentURL = window.location.href;
 const gitHubURL = currentURL.includes("github");
 
@@ -135,8 +144,12 @@ $("footer").ready(function () {
                 <hr class="mb-4 mt-0 d-inline-block mx-auto"
                     style="width: 60px; background-color: #7c4dff; height: 2px" />
                 <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
-                <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+                <p><i class="fas fa-envelope mr-3"></i> <a href="mailto:office@northernbot.com"
+                  >office@northernbot.com</a
+                ></p>
+                <p><i class="fas fa-phone mr-3"></i>
+                    <a href="tel:(905) 632-0559">(905) 632-0559</a>
+                </p>
             </div>
             <!-- Grid column -->
         </div>
