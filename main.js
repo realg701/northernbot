@@ -64,26 +64,26 @@ $("footer").ready(function () {
     <div class="d-flex justify-content-center justify-content-md-between
  align-items-baseline mx-auto" style="max-width: 1200px;">
         <!-- Left -->
-        <div class="d-none d-md-block social-text">
+        <div class="d-none d-md-block social-text mx-2">
             <span>Get connected with us on social networks:</span>
         </div>
         <!-- Left -->
 
         <!-- Right -->
         <div class="social-links">
-            <a href="" class="text-white me-4">
+            <a href="" class="text-white mx-3">
                 <i class="fab fa-facebook-f" style="color:black"></i>
             </a>
-            <a href="" class="text-white me-4">
+            <a href="" class="text-white mx-3">
                 <i class="fab fa-twitter" style="color:black"></i>
             </a>
-            <a href="" class="text-white me-4">
+            <a href="" class="text-white mx-3">
                 <i class="fab fa-google"></i>
             </a>
-            <a href="" class="text-white me-4">
+            <a href="" class="text-white mx-3">
                 <i class="fab fa-instagram"></i>
             </a>
-            <a href="" class="text-white me-4">
+            <a href="" class="text-white mx-3">
                 <i class="fab fa-linkedin"></i>
             </a>
         </div>
