@@ -14,15 +14,6 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  $("p").mouseover(function () {
-    $("p").css("background-color", "yellow");
-  });
-  $("p").mouseout(function () {
-    $("p").css("background-color", "lightgray");
-  });
-});
-
 const currentURL = window.location.href;
 const gitHubURL = currentURL.includes("github");
 
@@ -58,7 +49,7 @@ $(".custom-container").ready(function () {
   $(".custom-container").append(`
 <div class="loader-wrapper">
   <span class="loader">
-    <span class="loader-inner"></span>
+    <span class="loader-inner"><img src="${logo}/public/images/favicon-2.png" alt="logo"/></span>
   </span>
 </div>
 `);
