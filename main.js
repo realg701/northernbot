@@ -18,13 +18,14 @@ const currentURL = window.location.href;
 const gitHubURL = currentURL.includes("github");
 
 const logo = currentURL.includes("pages") ? "../.." : ".";
+const logoFix = currentURL.includes("/products/") ? "../" : "";
 const preFix = gitHubURL ? "/northernbot" : "";
 
 // NavBar
 $("nav").ready(function () {
   $("nav").append(`
 <div class="custom-navbar">
-    <a href="${preFix}/"><img class="logo" src="${logo}/public/images/logo.png" alt="logo"></a>
+    <a href="${preFix}/"><img class="logo" src="${logoFix + logo}/public/images/logo.png" alt="logo"></a>
     <ul id="navbar-lg">
         <a class="home-page" href="${preFix}/">Home</a>
         <a class="products-page" href="${preFix}/pages/products">Products</a>
@@ -33,7 +34,9 @@ $("nav").ready(function () {
         <a class="contact-page" href="${preFix}/pages/contact">Contact</a>
     </ul>
     <div id="navbar-md" class="dropdown">
-        <button class="dropbtn"><img src="${logo}/public/images/svgs/menu_24dp.svg" alt="menu"></button>
+        <button class="dropbtn"><img src="${
+          logoFix + logo
+        }/public/images/svgs/menu_24dp.svg" alt="menu"></button>
         <div class="dropdown-content">
             <a href="${preFix}/">Home</a>
             <a href="${preFix}/pages/products">Products</a>
@@ -51,7 +54,9 @@ $(".custom-container").ready(function () {
   $(".custom-container").append(`
 <div class="loader-wrapper">
   <span class="loader">
-    <span class="loader-inner"><img src="${logo}/public/images/loader.png" alt="logo"/></span>
+    <span class="loader-inner"><img src="${
+      logoFix + logo
+    }/public/images/loader.png" alt="logo"/></span>
   </span>
 </div>
 `);
