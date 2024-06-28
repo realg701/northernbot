@@ -200,7 +200,7 @@ nav {
 .hot-product img {
   border-radius: 22px !important;
   box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.527);
-  width: 49%;
+  width: 100%;
 }
 
 @media (width < 800px) {

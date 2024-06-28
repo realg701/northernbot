@@ -66,4 +66,4 @@ $("head").ready(function () {
 `);
 });
 
-console.log(data);
+const length = data[2];

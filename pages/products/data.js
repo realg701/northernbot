@@ -48,5 +48,3 @@ export const data = [
       "Product feature 1. Silent floor washing machine to meet the needs of special occasions. 2. Built-in car charger, anti-lost, anti-fall and anti-water intrusion. 3. The squeegee is easy to assemble and disassemble, and the operation is simple and easy to learn. 4. Turning radius 1.7 meters, which can turn around in place. 5. Triple anti-water intrusion devices: waterproof cover, floating ball devices and liquid level sensors. 6. Design of two water injection ports: the large water injection port can achieve rapid water injection, and the smallone is suitable for places far away from the water source. 7. Lead-acid maintenance-free battery ensures continuous working hours.",
   },
 ];
-
-console.log(data);
