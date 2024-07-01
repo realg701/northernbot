@@ -3,9 +3,9 @@ import { data } from "./data.js";
 const currentURL = window.location.href;
 const splitURL = currentURL.split("/");
 const params = splitURL[5];
-const splitStr = params.replace("-", " ");
+const splitStr = params.replaceAll("-", " ");
 const result = data.find(
-  (item) => item.title.toLowerCase === splitStr.toLowerCase
+  (item) => item.title.toLowerCase() === splitStr.toLowerCase()
 );
 
 $("head").ready(function () {
@@ -14,17 +14,26 @@ $("head").ready(function () {
 `);
 });
 
-$("#products-container").ready(function () {
-  $("#products-container").append(`
-    <div class="container">
-      <img src=".${result.image}" alt="${result.title}" style="width:100%">
-      <div class="card-container">
-        <h4 alt=${result.title}><b>${result.title}</b></h4>
-        <p>${result.category}</p>
-        <p>${result.features}</p>
-      </div>
-    </div>
-  `);
-});
+$("#product-container").ready(function () {
+  $("#product-info").append(`
+<div class="card-container">
+  <h2 alt=${result.title}><b>${result.title}</b></h2>
+  <p>${result.category}</p>
+  <h2>Features:</h2>
+</div>
+`);
 
-console.log(result);
+  $("#product-features").append(
+    result.features.map(
+      (feature, index) => `<li key="${index}">${feature}</li>`
+    )
+  );
+
+  $("#product-description").append(
+    `
+    <h2>Description:</h2>
+    <p>
+      ${result.description}
+    </p>`
+  );
+});
