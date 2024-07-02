@@ -122,7 +122,6 @@ nav {
 }
 /* Links inside the dropdown */
 .dropdown-content a {
-  font-weight: 600;
   color: black;
   padding: 10px 12px;
   text-decoration: none;
