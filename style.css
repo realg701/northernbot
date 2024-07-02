@@ -9,6 +9,9 @@ body {
   padding: 0;
   height: 100vh;
 }
+a {
+  text-decoration: none !important;
+}
 
 a:hover {
   color: rgb(0, 119, 255) !important;
@@ -119,8 +122,9 @@ nav {
 }
 /* Links inside the dropdown */
 .dropdown-content a {
+  font-weight: 600;
   color: black;
-  padding: 10px 16px;
+  padding: 10px 12px;
   text-decoration: none;
   display: block;
 }
@@ -128,7 +132,7 @@ nav {
 .dropdown-content a:hover {
   background-color: black;
   color: white !important;
-  padding: 16px;
+  padding: 16px 12px;
 }
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {

@@ -16,7 +16,7 @@ $("head").ready(function () {
 
 $("#product-container").ready(function () {
   $("#product-info").append(`
-<div class="card-container">
+<div class="card-container" style="padding: 8px;">
   <h2 alt=${result.title}><b>${result.title}</b></h2>
   <p>${result.category}</p>
   <h2>Features:</h2>
