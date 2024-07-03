@@ -34,7 +34,7 @@ $("nav").ready(function () {
     </ul>
     <div id="navbar-md" class="dropdown">
         <button class="dropbtn"><img src="${
-          logo + logoFix + logoFixGitHub
+          logo + logoFix + logoFixGitHub + gitHubURL
         }/public/images/svgs/menu_24dp.svg" alt="menu"></button>
         <div class="dropdown-content">
             <a href="${gitHubURL}/">Home</a>
