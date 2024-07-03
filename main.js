@@ -54,7 +54,7 @@ $(".custom-container").ready(function () {
 <div class="loader-wrapper">
   <span class="loader">
     <span class="loader-inner"><img src="${
-      logo + logoFix + logoFixGitHub
+      logo + logoFix + logoFixGitHub + gitHubURL
     }/public/images/loader.png" alt="logo"/></span>
   </span>
 </div>
