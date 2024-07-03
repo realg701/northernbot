@@ -1,8 +1,10 @@
 import { data } from "./data.js";
 
 const currentURL = window.location.href;
+const gitHubURL = currentURL.includes("github");
+
 const splitURL = currentURL.split("/");
-const params = splitURL[5];
+const params = gitHubURL ? splitURL[6] : splitURL[5];
 const splitStr = params.replaceAll("-", " ");
 const result = data.find(
   (item) => item.title.toLowerCase() === splitStr.toLowerCase()
