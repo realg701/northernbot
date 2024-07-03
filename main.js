@@ -17,15 +17,16 @@ $(document).ready(function () {
 const currentURL = window.location.href;
 const gitHubURL = currentURL.includes("github");
 
-const logo = currentURL.includes("pages") ? "../.." : ".";
-const logoFix = currentURL.includes("/products/") ? "../" : "";
+const logo = currentURL.includes("pages") ? "../../" : "";
+const logoFix = currentURL.split("/").length == 7 ? ".." : "";
+const logoFixGitHub = currentURL.split("/").length == 8 ? "../.." : "";
 const preFix = gitHubURL ? "/northernbot" : "";
 
 // NavBar
 $("nav").ready(function () {
   $("nav").append(`
 <div class="custom-navbar">
-    <a href="${preFix}/"><img class="logo" src="${logoFix + logo}/public/images/logo.png" alt="logo"></a>
+    <a href="${preFix}/"><img class="logo" src="${logo + logoFix + logoFixGitHub}/public/images/logo.png" alt="logo"></a>
     <ul id="navbar-lg">
         <a class="home-page" href="${preFix}/">Home</a>
         <a class="products-page" href="${preFix}/pages/products">Products</a>
