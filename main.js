@@ -36,7 +36,7 @@ $("nav").ready(function () {
     </ul>
     <div id="navbar-md" class="dropdown">
         <button class="dropbtn"><img src="${
-          logoFix + logo
+          logo + logoFix + logoFixGitHub
         }/public/images/svgs/menu_24dp.svg" alt="menu"></button>
         <div class="dropdown-content">
             <a href="${preFix}/">Home</a>
@@ -56,7 +56,7 @@ $(".custom-container").ready(function () {
 <div class="loader-wrapper">
   <span class="loader">
     <span class="loader-inner"><img src="${
-      logoFix + logo
+      logo + logoFix + logoFixGitHub
     }/public/images/loader.png" alt="logo"/></span>
   </span>
 </div>
