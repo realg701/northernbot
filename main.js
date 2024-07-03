@@ -15,36 +15,33 @@ $(document).ready(function () {
 });
 
 const currentURL = window.location.href;
-const gitHubURL = currentURL.includes("github");
+const gitHubURL = currentURL.includes("github") ? "/northernbot" : "";
 
 const logo = currentURL.includes("pages") ? "../../" : "";
 const logoFix = currentURL.split("/").length == 7 ? ".." : "";
 const logoFixGitHub = currentURL.split("/").length == 8 ? "../.." : "";
-
-const preFix = gitHubURL ? "/northernbot" : "";
-
 // NavBar
 $("nav").ready(function () {
   $("nav").append(`
 <div class="custom-navbar">
-    <a href="${preFix}/"><img class="logo" src="${logo + logoFix + logoFixGitHub}/public/images/logo.png" alt="logo"></a>
+    <a href="${gitHubURL}/"><img class="logo" src="${logo + logoFix + logoFixGitHub + gitHubURL}/public/images/logo.png" alt="logo"></a>
     <ul id="navbar-lg">
-        <a class="home-page" href="${preFix}/">Home</a>
-        <a class="products-page" href="${preFix}/pages/products">Products</a>
-        <a class="about-page" href="${preFix}/pages/location">Location</a>
-        <a class="about-page" href="${preFix}/pages/about">About</a>
-        <a class="contact-page" href="${preFix}/pages/contact">Contact</a>
+        <a class="home-page" href="${gitHubURL}/">Home</a>
+        <a class="products-page" href="${gitHubURL}/pages/products">Products</a>
+        <a class="about-page" href="${gitHubURL}/pages/location">Location</a>
+        <a class="about-page" href="${gitHubURL}/pages/about">About</a>
+        <a class="contact-page" href="${gitHubURL}/pages/contact">Contact</a>
     </ul>
     <div id="navbar-md" class="dropdown">
         <button class="dropbtn"><img src="${
           logo + logoFix + logoFixGitHub
         }/public/images/svgs/menu_24dp.svg" alt="menu"></button>
         <div class="dropdown-content">
-            <a href="${preFix}/">Home</a>
-            <a href="${preFix}/pages/products">Products</a>
-            <a class="about-page" href="${preFix}/pages/location">Location</a>
-            <a href="${preFix}/pages/about">About</a>
-            <a href="${preFix}/pages/contact">Contact</a>
+            <a href="${gitHubURL}/">Home</a>
+            <a href="${gitHubURL}/pages/products">Products</a>
+            <a class="about-page" href="${gitHubURL}/pages/location">Location</a>
+            <a href="${gitHubURL}/pages/about">About</a>
+            <a href="${gitHubURL}/pages/contact">Contact</a>
         </div>
     </div>
 </div>
@@ -107,7 +104,7 @@ $("footer").ready(function () {
             <!-- Grid column -->
             <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                 <!-- Content -->
-                <a href="${preFix}/"><h6 class="text-uppercase fw-bold text-white">NorthernBot</h6></a>
+                <a href="${gitHubURL}/"><h6 class="text-uppercase fw-bold text-white">NorthernBot</h6></a>
                 <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
                 <p>
                     Here you can use rows and columns to organize your footer content. Lorem ipsum
@@ -119,7 +116,7 @@ $("footer").ready(function () {
             <!-- Grid column -->
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                 <!-- Links -->
-                <a href="${preFix}/pages/products"><h6 class="text-uppercase fw-bold text-white">Products</h6></a>
+                <a href="${gitHubURL}/pages/products"><h6 class="text-uppercase fw-bold text-white">Products</h6></a>
                 <hr class="mb-4 mt-0 d-inline-block mx-auto"
                     style="width: 60px; background-color: #7c4dff; height: 2px" />
                 <p>
@@ -140,7 +137,7 @@ $("footer").ready(function () {
             <!-- Grid column -->
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                 <!-- Links -->
-                <a href="${preFix}/pages/contact"><h6 class="text-uppercase fw-bold text-white">Contact</h6></a>
+                <a href="${gitHubURL}/pages/contact"><h6 class="text-uppercase fw-bold text-white">Contact</h6></a>
                 <hr class="mb-4 mt-0 d-inline-block mx-auto"
                     style="width: 60px; background-color: #7c4dff; height: 2px" />
                 <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
