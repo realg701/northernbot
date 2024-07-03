@@ -20,6 +20,7 @@ const gitHubURL = currentURL.includes("github");
 const logo = currentURL.includes("pages") ? "../../" : "";
 const logoFix = currentURL.split("/").length == 7 ? ".." : "";
 const logoFixGitHub = currentURL.split("/").length == 8 ? "../.." : "";
+
 const preFix = gitHubURL ? "/northernbot" : "";
 
 // NavBar

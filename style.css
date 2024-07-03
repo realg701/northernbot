@@ -261,7 +261,6 @@ footer .fab {
   background-color: #fff;
   animation: loader-inner 2s infinite ease-in;
 }
-
 .loader-inner img {
   position: absolute;
   top: 50%;
@@ -270,7 +269,6 @@ footer .fab {
   width: 200px;
   height: 200px;
 }
-
 @media (width < 800px) {
   .loader {
     width: 100px;
@@ -283,7 +281,6 @@ footer .fab {
     height: 100px;
   }
 }
-
 @keyframes loader {
   0% {
     transform: rotate(0deg);
@@ -301,7 +298,6 @@ footer .fab {
     transform: rotate(360deg);
   }
 }
-
 @keyframes loader-inner {
   0% {
     height: 0%;
