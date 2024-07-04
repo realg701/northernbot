@@ -104,8 +104,10 @@
 }
 
 #product-details .get-a-quote {
-  width: 100%;
-  margin: 0 8px;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  margin: 8px;
   padding: 12px 16px;
   border-radius: 8px;
   background-color: #007dc5;
@@ -121,9 +123,8 @@
 
 @media (width < 800px) {
   #product-details .get-a-quote {
+    max-width: unset;
     margin: 0;
-    display: flex;
-    justify-content: center;
   }
 }
 
