@@ -4,11 +4,40 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0 auto 32px;
+  margin: 0 auto;
+  padding-bottom: 32px;
+  gap: 16px;
+}
+
+#floor-scrubbers-container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-bottom: 32px;
+  gap: 16px;
+}
+
+#floor-sweepers-container {
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding-bottom: 32px;
   gap: 16px;
 }
 
 #products-container a {
+  text-decoration: none;
+}
+#floor-scrubbers-container a {
+  text-decoration: none;
+}
+#floor-sweepers-container a {
   text-decoration: none;
 }
 

@@ -74,7 +74,7 @@ export const data = [
   },
   {
     title: "Walk Behind Smart Mop i5",
-    category: "Smart Mop",
+    category: "Floor Sweepers",
     image: ["./mini-ride-on-floor-scrubber-nb02/images/image-2.jpeg"],
     features: [
       "Rated voltage: DC-36V",

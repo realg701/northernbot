@@ -12,6 +12,17 @@ $(document).ready(function () {
   $(window).on("load", function () {
     $(".loader-wrapper").fadeOut("slow");
   });
+
+  // Loader
+  $("body").append(`
+    <div class="loader-wrapper">
+      <span class="loader">
+        <span class="loader-inner"><img src="${
+          logo + logoFix + logoFixGitHub + gitHubURL
+        }/public/images/loader.png" alt="logo"/></span>
+      </span>
+    </div>
+    `);
 });
 
 const currentURL = window.location.href;
@@ -20,19 +31,30 @@ const gitHubURL = currentURL.includes("github") ? "/northernbot" : "";
 const logo = currentURL.includes("pages") ? "../../" : "";
 const logoFix = currentURL.split("/").length == 7 ? ".." : "";
 const logoFixGitHub = currentURL.split("/").length == 8 ? "../.." : "";
-// NavBar
-$("nav").ready(function () {
-  $("nav").append(`
+
+$(document).ready(function () {
+  // NavBar
+  $("body").append(`
+<nav>
 <div class="custom-navbar">
     <a href="${gitHubURL}/"><img class="logo" src="${logo + logoFix + logoFixGitHub + gitHubURL}/public/images/logo.png" alt="logo"></a>
     <ul id="navbar-lg">
         <a class="home-page" href="${gitHubURL}/">Home</a>
-        <a class="products-page" href="${gitHubURL}/pages/products">Products</a>
-        <a class="about-page" href="${gitHubURL}/pages/location">Location</a>
+        <div class="products-page dropdown" >
+            <a href="${gitHubURL}/pages/products" class="">Products</a>
+            <div class="products-dropdown-content dropdown-content">
+                <a href="${gitHubURL}/pages/products/category/floor-scrubbers">Floor Scrubbers</a>
+                <a href="${gitHubURL}/pages/products/category/floor-sweepers">Floor Sweepers</a>
+            </div>
+        </div>
+        <a class="location-page" href="${gitHubURL}/pages/location">Location</a>
         <a class="about-page" href="${gitHubURL}/pages/about">About</a>
         <a class="contact-page" href="${gitHubURL}/pages/contact">Contact</a>
+        <a class="contact-btn" href="tel:(905) 632-0559"><img class="" width="10" height="10" src="/public/images/svgs/telephone.svg" alt="telephone" /> (905) 632-0559 </a>
     </ul>
     <div id="navbar-md" class="dropdown">
+            <a class="contact-btn" href="tel:(905) 632-0559"><img class="" width="10" height="10" src="/public/images/svgs/telephone.svg" alt="telephone" /> (905) 632-0559 </a>
+
         <button class="dropbtn"><img src="${
           logo + logoFix + logoFixGitHub + gitHubURL
         }/public/images/svgs/menu_24dp.svg" alt="menu"></button>
@@ -45,120 +67,122 @@ $("nav").ready(function () {
         </div>
     </div>
 </div>
+</nav>
 `);
-});
 
-// Loader
-$(".custom-container").ready(function () {
-  $(".custom-container").append(`
-<div class="loader-wrapper">
-  <span class="loader">
-    <span class="loader-inner"><img src="${
-      logo + logoFix + logoFixGitHub + gitHubURL
-    }/public/images/loader.png" alt="logo"/></span>
-  </span>
-</div>
+  // Parallax
+  $(".parallax").append(`
+      <img src="/public/images/parallax.jpeg" alt="floor scrubbers" />
+      <span class="hero-box">
+        <strong>Walk-Behind and Ride-On Floor Scrubbers</strong>
+        <p>US-made steel framed scrubbers that get the job done</p>
+      </span>
 `);
-});
 
-// Footer
-$("footer").ready(function () {
-  $("footer").append(`<!-- Section: Social media -->
-<section class="p-4" style="background-color:#64c6ff;color:black">
-    <div class="d-flex justify-content-center justify-content-md-between
- align-items-baseline mx-auto" style="max-width: 1200px;">
-        <!-- Left -->
-        <div class="d-none d-md-block social-text mx-2">
-            <span>Get connected with us on social networks:</span>
+  // Footer
+  $("body").append(`<!-- Section: Social media -->
+<footer
+    class="text-center text-lg-start text-white"
+    style="background-color: #1c2331"
+    >
+    <section class="p-4" style="background-color:#64c6ff;color:black">
+        <div class="d-flex justify-content-center justify-content-md-between
+     align-items-baseline mx-auto" style="max-width: 1200px;">
+            <!-- Left -->
+            <div class="d-none d-md-block social-text mx-2">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+    
+            <!-- Right -->
+            <div class="social-links">
+                <a href="" class="text-white mx-3">
+                    <i class="fab fa-facebook-f" style="color:black"></i>
+                </a>
+                <a href="" class="text-white mx-3">
+                    <i class="fab fa-twitter" style="color:black"></i>
+                </a>
+                <a href="" class="text-white mx-3">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="text-white mx-3">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="text-white mx-3">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <!-- Right -->
         </div>
-        <!-- Left -->
-
-        <!-- Right -->
-        <div class="social-links">
-            <a href="" class="text-white mx-3">
-                <i class="fab fa-facebook-f" style="color:black"></i>
-            </a>
-            <a href="" class="text-white mx-3">
-                <i class="fab fa-twitter" style="color:black"></i>
-            </a>
-            <a href="" class="text-white mx-3">
-                <i class="fab fa-google"></i>
-            </a>
-            <a href="" class="text-white mx-3">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="" class="text-white mx-3">
-                <i class="fab fa-linkedin"></i>
-            </a>
+    </section>
+    <!-- Section: Social media -->
+    
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <a href="${gitHubURL}/"><h6 class="text-uppercase fw-bold text-white">NorthernBot</h6></a>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        Here you can use rows and columns to organize your footer content. Lorem ipsum
+                        dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+                <!-- Grid column -->
+    
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <a href="${gitHubURL}/pages/products"><h6 class="text-uppercase fw-bold text-white">Products</h6></a>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                        <a href="#!" class="text-white">Home</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Products</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">About</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-white">Contact</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+    
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <a href="${gitHubURL}/pages/contact"><h6 class="text-uppercase fw-bold text-white">Contact</h6></a>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                    <p><i class="fas fa-envelope mr-3"></i> <a href="mailto:office@northernbot.com"
+                      >office@northernbot.com</a
+                    ></p>
+                    <p><i class="fas fa-phone mr-3"></i>
+                        <a href="tel:(905) 632-0559">(905) 632-0559</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
         </div>
-        <!-- Right -->
+    </section>
+    <!-- Section: Links  -->
+    
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Copyright:
+        <a class="text-white" href="/">NorthernBot.com</a>
     </div>
-</section>
-<!-- Section: Social media -->
+    <!-- Copyright -->
+</footer>
 
-<!-- Section: Links  -->
-<section class="">
-    <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-            <!-- Grid column -->
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                <!-- Content -->
-                <a href="${gitHubURL}/"><h6 class="text-uppercase fw-bold text-white">NorthernBot</h6></a>
-                <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-                <p>
-                    Here you can use rows and columns to organize your footer content. Lorem ipsum
-                    dolor sit amet, consectetur adipisicing elit.
-                </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                <!-- Links -->
-                <a href="${gitHubURL}/pages/products"><h6 class="text-uppercase fw-bold text-white">Products</h6></a>
-                <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color: #7c4dff; height: 2px" />
-                <p>
-                    <a href="#!" class="text-white">Home</a>
-                </p>
-                <p>
-                    <a href="#!" class="text-white">Products</a>
-                </p>
-                <p>
-                    <a href="#!" class="text-white">About</a>
-                </p>
-                <p>
-                    <a href="#!" class="text-white">Contact</a>
-                </p>
-            </div>
-            <!-- Grid column -->
-
-            <!-- Grid column -->
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                <!-- Links -->
-                <a href="${gitHubURL}/pages/contact"><h6 class="text-uppercase fw-bold text-white">Contact</h6></a>
-                <hr class="mb-4 mt-0 d-inline-block mx-auto"
-                    style="width: 60px; background-color: #7c4dff; height: 2px" />
-                <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
-                <p><i class="fas fa-envelope mr-3"></i> <a href="mailto:office@northernbot.com"
-                  >office@northernbot.com</a
-                ></p>
-                <p><i class="fas fa-phone mr-3"></i>
-                    <a href="tel:(905) 632-0559">(905) 632-0559</a>
-                </p>
-            </div>
-            <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-    </div>
-</section>
-<!-- Section: Links  -->
-
-<!-- Copyright -->
-<div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-    © 2024 Copyright:
-    <a class="text-white" href="/">NorthernBot.com</a>
-</div>
-<!-- Copyright -->`);
+    `);
 });

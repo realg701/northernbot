@@ -9,6 +9,7 @@ body {
   padding: 0;
   height: 100vh;
 }
+
 a {
   text-decoration: none !important;
 }
@@ -27,13 +28,12 @@ nav {
   box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.4);
   z-index: 10;
   box-sizing: unset;
-  /* border-bottom: 2px solid black; */
 }
 
 .custom-navbar {
   display: flex;
-  justify-content: space-between !important;
-  align-items: center !important;
+  justify-content: space-between;
+  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -50,6 +50,8 @@ nav {
 .custom-navbar ul {
   margin-right: 32px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 16px;
   list-style: none;
 }
@@ -66,6 +68,25 @@ nav {
 }
 #navbar-lg a:hover {
   color: rgb(0, 119, 255);
+}
+
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: black;
+  color: white !important;
+}
+.contact-btn:hover {
+  background-color: rgb(0, 255, 170);
+  color: white !important;
+  text-shadow: 0 0 8px black;
+}
+.contact-btn img {
+  margin-right: 8px;
+  width: 22px !important;
 }
 
 #navbar-md {
@@ -88,9 +109,22 @@ nav {
   #navbar-lg {
     display: none;
   }
+
+  .contact-btn {
+    margin-right: 8px !important;
+  }
 }
 
-/* Style The Dropdown Button */
+.products-dropdown-content {
+  top: 35px !important;
+  right: -60px !important;
+  width: 200px;
+}
+
+.products-dropdown-content a:hover {
+  padding: 10px 18px !important;
+}
+
 .dropbtn {
   display: flex;
   align-items: center;
@@ -100,46 +134,81 @@ nav {
   border: none;
   cursor: pointer;
   margin-right: 14px;
+  border-radius: 8px;
 }
-
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
-  /* background-color: black; */
   display: none;
   position: relative;
   display: inline-block;
 }
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
-  top: 50px;
+  top: 55px;
   right: 14px;
   display: none;
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
   z-index: 1;
 }
-/* Links inside the dropdown */
 .dropdown-content a {
   color: black;
   padding: 10px 12px;
   text-decoration: none;
+  border-radius: 8px;
   display: block;
 }
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: black;
   color: white !important;
   padding: 16px 12px;
 }
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
 }
-/* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
   background-color: black;
+}
+
+.parallax {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  z-index: -10;
+  /* width: 40%; */
+  /* padding: 40%; */
+  box-sizing: border-box;
+}
+
+.parallax img {
+  width: 100%;
+}
+
+.parallax .hero-box {
+  position: absolute;
+  bottom: 20%;
+  right: 10%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  color: white;
+  padding: 24px;
+  font-size: 2vw;
+}
+@media (width < 800px) {
+  .parallax .hero-box {
+    bottom: 8%;
+    right: unset;
+    padding: 8px;
+  }
+}
+
+.parallax .hero-box p {
+  margin: 0;
 }
 
 .spacer {
@@ -159,10 +228,22 @@ nav {
   z-index: -1;
 }
 
+.content-box {
+  width: 100%;
+  background-color: white;
+}
+
 .custom-container {
+  background-color: white;
   max-width: 1200px;
-  margin: 22px auto !important;
-  padding: 0 16px;
+  margin: 30% auto 0;
+  padding: 22px 16px;
+}
+
+@media (width < 800px) {
+  .custom-container {
+    /* margin-top: 30%; */
+  }
 }
 
 .custom-container h1 {
@@ -217,6 +298,7 @@ nav {
   }
 }
 footer {
+  /* bottom: 0; */
   box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.4);
 }
 
