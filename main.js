@@ -50,10 +50,10 @@ $(document).ready(function () {
         <a class="location-page" href="${gitHubURL}/pages/location">Location</a>
         <a class="about-page" href="${gitHubURL}/pages/about">About</a>
         <a class="contact-page" href="${gitHubURL}/pages/contact">Contact</a>
-        <a class="contact-btn" href="tel:(905) 632-0559"><img class="" width="10" height="10" src="/public/images/svgs/telephone.svg" alt="telephone" /> (905) 632-0559 </a>
+        <a class="contact-btn" href="tel:(905) 632-0559"><img class="" width="10" height="10" src="${gitHubURL}/public/images/svgs/telephone.svg" alt="telephone" /> (905) 632-0559 </a>
     </ul>
     <div id="navbar-md" class="dropdown">
-            <a class="contact-btn" href="tel:(905) 632-0559"><img class="" width="10" height="10" src="/public/images/svgs/telephone.svg" alt="telephone" /> (905) 632-0559 </a>
+            <a class="contact-btn" href="tel:(905) 632-0559"><img class="" width="10" height="10" src="${gitHubURL}/public/images/svgs/telephone.svg" alt="telephone" /> (905) 632-0559 </a>
 
         <button class="dropbtn"><img src="${
           logo + logoFix + logoFixGitHub + gitHubURL
@@ -61,6 +61,8 @@ $(document).ready(function () {
         <div class="dropdown-content">
             <a href="${gitHubURL}/">Home</a>
             <a href="${gitHubURL}/pages/products">Products</a>
+            <a href="${gitHubURL}/pages/products/category/floor-scrubbers">Floor Scrubbers</a>
+            <a href="${gitHubURL}/pages/products/category/floor-sweepers">Floor Sweepers</a>
             <a class="about-page" href="${gitHubURL}/pages/location">Location</a>
             <a href="${gitHubURL}/pages/about">About</a>
             <a href="${gitHubURL}/pages/contact">Contact</a>
@@ -72,7 +74,7 @@ $(document).ready(function () {
 
   // Parallax
   $(".parallax").append(`
-      <img src="/public/images/parallax.jpeg" alt="floor scrubbers" />
+      <img src="${gitHubURL}/public/images/parallax.jpeg" alt="floor scrubbers" />
       <span class="hero-box">
         <strong>Walk-Behind and Ride-On Floor Scrubbers</strong>
         <p>US-made steel framed scrubbers that get the job done</p>
