@@ -18,12 +18,12 @@ $("head").ready(function () {
 
 $("#product-container").ready(function () {
   $("#product-info").append(`
-<div class="card-container" style="padding: 8px;">
-  <h2 alt=${result.title}><b>${result.title}</b></h2>
-  <p>${result.category}</p>
-  <h2>Features:</h2>
-</div>
-`);
+    <div class="card-container" style="padding: 8px;">
+      <h2 alt=${result.title}><b>${result.title}</b></h2>
+      <p>${result.category}</p>
+      <h2>Features:</h2>
+    </div>
+  `);
 
   $("#product-features").append(
     result.features.map(
@@ -31,11 +31,15 @@ $("#product-container").ready(function () {
     )
   );
 
-  $("#product-description").append(
-    `
+  $(".applicable").append(`
+    <h2>Applicable Fields:</h2>
+    <p>${result.applicable}</p>
+  `);
+
+  $("#product-description").append(`
     <h2>Description:</h2>
     <p>
       ${result.description}
-    </p>`
-  );
+    </p>
+  `);
 });

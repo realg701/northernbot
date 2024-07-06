@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  transition: all 0.3s linear;
+  transition: all 0.3s linear !important;
 }
 
 body {
@@ -15,7 +15,7 @@ a {
 }
 
 a:hover {
-  color: rgb(0, 119, 255) !important;
+  color: rgb(0, 119, 255);
 }
 
 nav {
@@ -182,7 +182,7 @@ nav {
   z-index: -10;
   /* width: 40%; */
   /* padding: 40%; */
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .parallax img {
@@ -236,7 +236,7 @@ nav {
 .custom-container {
   background-color: white;
   max-width: 1200px;
-  margin: 30% auto 0;
+  margin: 29% auto 0;
   padding: 22px 16px;
 }
 

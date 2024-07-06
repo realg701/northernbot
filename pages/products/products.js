@@ -14,15 +14,19 @@ $("#products-container").ready(function () {
       const productTitle = product.title;
       const toLink = productTitle.replaceAll(" ", "-").toLowerCase();
       return `
-<a key=${index} href=${preFix + "/pages/products/" + toLink}>
-  <div class="card">
+<div class="card" key=${index}>
+  <a href=${preFix + "/pages/products/" + toLink}>
     <img src=${product.image[0]} alt="${product.title}" style="width:100%">
     <div class="card-container">
       <h4 alt=${product.title}><b>${product.title}</b></h4>
-      <p>${product.category}</p>
+      <p><a href="/pages/products/category/${
+        product.category == "Floor Scrubbers"
+          ? "floor-scrubbers"
+          : "floor-sweepers"
+      }">${product.category}</a></p>
     </div>
-  </div>
-</a>
+  </a>
+</div>
 `;
     })
   );

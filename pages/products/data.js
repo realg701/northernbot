@@ -2,7 +2,7 @@ export const data = [
   {
     title: "Handheld Folding Floor Scrubber RMM1",
     category: "Floor Scrubbers",
-    image: ["./mini-ride-on-floor-scrubber-nb02/images/image-1.jpeg"],
+    image: ["./handheld-folding-floor-scrubber-rmm1/images/image-1.jpeg"],
     features: [
       "Cleaning width: 1600m/h",
       "Battery capacity: 4hr",
@@ -14,13 +14,15 @@ export const data = [
       "Durable",
       "Sustainable",
     ],
+    applicable:
+      "Hotels, supermarkets, hospitals, office spaces, parking lots, factories, ports, etc.",
     description:
       "Solution tank for holding cleaning solution. Recovery tank to collect dirty water and debris. Adjustable pressure and speed settings for customization. Maneuverability features for navigating around obstacles. Battery or power source for operation. Durable construction for longevity. Safety features such as emergency stop buttons. Easy-to-maintain design for convenience.",
   },
   {
     title: "Walk Behind Floor Scrubber NB01",
     category: "Floor Scrubbers",
-    image: ["./mini-ride-on-floor-scrubber-nb02/images/image-1.jpeg"],
+    image: ["./walk-behind-floor-scrubber-nb01/images/image-1.jpeg"],
     features: [
       "Cleaning width: 510mm",
       "Working efficiency: 2000m/h",
@@ -33,6 +35,8 @@ export const data = [
       "Squeegee tank: 50L",
       "Battery: 6EVF-103Ah*2",
     ],
+    applicable:
+      "Hotels, supermarkets, hospitals, office spaces, parking lots, factories, ports, etc.",
     description:
       "The operation panel is simple , easy to understand and easy to use. Special water tank forward -tilt lock design makes safer working. Rotational molded brush plate cover, sturdy and durable. The dual design of liquid level switch and filter cotton protects the motor and increases its service life. Hand push battery floor scrubber, easy to operate.",
   },
@@ -51,13 +55,15 @@ export const data = [
       "Sewage tank:75L",
       "Battery:6EVF-100AH*2",
     ],
+    applicable:
+      "Hotels, supermarkets, hospitals, office spaces, parking lots, factories, ports, etc.",
     description:
       "Silent floor washing machine to made the needs of special occasions. Built in car charger anti-lost, anti-fall and anti-water intrusion. Lighter and more compact, suitable for smaller places. Use Fur skirt instead of traditional rubber skirt for longer service life.",
   },
   {
     title: "Walk Behind Floor Scrubber NB03",
     category: "Floor Scrubbers",
-    image: ["./mini-ride-on-floor-scrubber-nb02/images/image-1.jpeg"],
+    image: ["./walk-behind-floor-scrubber-nb03/images/image-1.jpeg"],
     features: [
       "Work efficiency:2000m/h",
       "Clean water tank:60L",
@@ -69,6 +75,8 @@ export const data = [
       "Sewage tank:75L",
       "Battery:6EVF-100AH*2",
     ],
+    applicable:
+      "Hotels, supermarkets, hospitals, office spaces, parking lots, factories, ports, etc.",
     description:
       "Silent floor washing machine to made the needs of special occasions. Built in car charger anti-lost, anti-fall and anti-water intrusion. Lighter and more compact, suitable for smaller places. Use Fur skirt instead of traditional rubber skirt for longer service life.",
   },
@@ -87,6 +95,8 @@ export const data = [
       "Battery working hours: 8Ah-78mins",
       "12Ah-130mins",
     ],
+    applicable:
+      "Hotels, supermarkets, hospitals, office spaces, parking lots, factories, ports, etc.",
     description:
       "The M-2 consists of two main parts: The body that contains the motors (one vacuum motor, two brush motors), cleaning solution tank, recovery tank, handle and control panel with 3 functional buttons & one power display window. The scrub deck that contains the brushes and squeegee.",
   },
