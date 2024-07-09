@@ -1,4 +1,13 @@
 // Apply CSS On Scroll
+import { cardData } from "./data.js";
+
+const currentURL = window.location.href;
+const gitHubURL = currentURL.includes("github") ? "/northernbot" : "";
+
+const logo = currentURL.includes("pages") ? "../../" : "";
+const logoFix = currentURL.split("/").length == 7 ? ".." : "";
+const logoFixGitHub = currentURL.split("/").length == 8 ? "../.." : "";
+
 $(document).ready(function () {
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
@@ -15,22 +24,16 @@ $(document).ready(function () {
 
   // Loader
   $("body").append(`
-    <div class="loader-wrapper">
-      <span class="loader">
-        <span class="loader-inner"><img src="${
+    <div class="loader-wrapper justify-content-center align-items-center position-absolute w-100 h-100 top-0 start-0 ">
+      <span class="loader d-inline-block position-relative">
+        <span class="loader-inner d-inline-block w-100">
+        <img class="position-absolute top-50 start-50 translate-middle" src="${
           logo + logoFix + logoFixGitHub + gitHubURL
         }/public/images/loader.png" alt="logo"/></span>
       </span>
     </div>
     `);
 });
-
-const currentURL = window.location.href;
-const gitHubURL = currentURL.includes("github") ? "/northernbot" : "";
-
-const logo = currentURL.includes("pages") ? "../../" : "";
-const logoFix = currentURL.split("/").length == 7 ? ".." : "";
-const logoFixGitHub = currentURL.split("/").length == 8 ? "../.." : "";
 
 $(document).ready(function () {
   // NavBar
@@ -74,7 +77,9 @@ $(document).ready(function () {
 
   // Parallax
   $(".parallax").append(`
-      <img src="${gitHubURL}/public/images/parallax.jpg" alt="floor scrubbers" />
+      <img src="${
+        logo + logoFix + logoFixGitHub + gitHubURL
+      }/public/images/parallax.jpg" alt="floor scrubbers" />
       <span class="hero-box">
         <strong>Walk-Behind and Ride-On Floor Scrubbers</strong>
         <p>US-made steel framed scrubbers that get the job done</p>
@@ -106,10 +111,34 @@ $(document).ready(function () {
             <i class="fa-solid fa-circle-arrow-right fa-shake" style="color:#74c0fc" ></i>
           </a>
         </p>
-        </div>`);
+      </div>
+`);
+
+  $(".category-cards").append(
+    cardData.map(
+      (item, index) => `
+          <a
+            key="${index}"
+            href="${item.link}"
+            class="d-flex position-relative text-center"
+          >
+            <img
+              class="d-flex w-100"
+              src="${item.image}"
+              alt=""
+            />
+            <span
+              class="position-absolute top-50 start-50 translate-middle bg-dark text-light p-2 h6"
+              >${item.title}</span
+            >
+          </a>
+    `
+    )
+  );
 
   // Footer
-  $("body").append(`<!-- Section: Social media -->
+  $("body").append(`
+<!-- Section: Social media -->
 <footer
     class="text-center text-lg-start text-white"
     style="background-color: #1c2331"

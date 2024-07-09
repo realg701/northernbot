@@ -29,88 +29,81 @@
   </head>
 
   <body>
-    <nav><!-- Navbar content will display here --></nav>
+    <div class="parallax"></div>
+    <div class="content-box">
+      <div class="custom-container">
+        <h1>NorthernBot Products</h1>
+        <div id="product-container">
+          <div id="image-slider" class="w3-content w3-display-container">
+            <img
+              class="mySlides"
+              src="../handheld-folding-floor-scrubber-RMM1/images/image-1.jpeg"
+              style="width: 100%"
+            />
+            <img
+              class="mySlides"
+              src="../handheld-folding-floor-scrubber-RMM1/images/image-1.jpeg"
+              style="width: 100%"
+            />
+            <img
+              class="mySlides"
+              src="../handheld-folding-floor-scrubber-RMM1/images/image-2.jpeg"
+              style="width: 100%"
+            />
 
-    <section class="spacer">
-      <img src="../../../public/images/header2.png" alt="hero image" />
-    </section>
+            <button
+              class="w3-button w3-black w3-display-left"
+              onclick="plusDivs(-1)"
+            >
+              &#10094;
+            </button>
+            <button
+              class="w3-button w3-black w3-display-right"
+              onclick="plusDivs(1)"
+            >
+              &#10095;
+            </button>
+          </div>
 
-    <div class="custom-container">
-      <h1>NorthernBot Products</h1>
-      <div id="product-container">
-        <div id="image-slider" class="w3-content w3-display-container">
-          <img
-            class="mySlides"
-            src="../handheld-folding-floor-scrubber-RMM1/images/image-3.jpeg"
-            style="width: 100%"
-          />
-          <img
-            class="mySlides"
-            src="../handheld-folding-floor-scrubber-RMM1/images/image-1.jpeg"
-            style="width: 100%"
-          />
-          <img
-            class="mySlides"
-            src="../handheld-folding-floor-scrubber-RMM1/images/image-2.jpeg"
-            style="width: 100%"
-          />
-
-          <button
-            class="w3-button w3-black w3-display-left"
-            onclick="plusDivs(-1)"
-          >
-            &#10094;
-          </button>
-          <button
-            class="w3-button w3-black w3-display-right"
-            onclick="plusDivs(1)"
-          >
-            &#10095;
-          </button>
+          <div id="product-details">
+            <section id="product-info"></section>
+            <ul id="product-features"></ul>
+            <a class="get-a-quote" href="/pages/contact/">Get A Quote</a>
+          </div>
         </div>
-
-        <div id="product-details">
-          <section id="product-info"></section>
-          <ul id="product-features"></ul>
-          <a class="get-a-quote" href="/pages/contact/">Get A Quote</a>
-        </div>
-      </div>
-      <div class="custom-container" style="padding: 0">
-        <div id="product-description"></div>
-
-        <div id="startchange">
-          <video
-            src="../../../public/videos/rmm1.mp4"
-            autoplay
-            muted
-            loop
-            width="100%"
-          ></video>
-          <img
-            src="../../../public/images/best-seller-2.png"
-            alt="best seller"
-          />
-          <div class="hot-product">
-            <a
-              href="../../../pages/products/handheld-folding-floor-scrubber-RMM1/"
-              ><img src="../../../public/images/rmm1-1.png" alt="RMM1"
-            /></a>
-            <a
-              href="../../../pages/products/handheld-folding-floor-scrubber-RMM1/"
-              ><img src="../../../public/images/rmm1-2.png" alt="RMM1"
-            /></a>
+        <div class="applicable"></div>
+        <div class="custom-container" style="padding: 0; margin-top: 0">
+          <div id="product-description"></div>
+          <div
+            id="startchange"
+            class="d-flex justify-content-center align-items-center flex-column position-relative gap-3"
+          >
+            <video
+              src="../../../public/videos/video-rmm1-2.mp4"
+              autoplay
+              muted
+              loop
+              width="100%"
+            ></video>
+            <img
+              class="position-absolute top-0 start-0"
+              src="../../../public/images/best-seller-2.png"
+              alt="best seller"
+            />
+            <div
+              class="hot-product d-flex justify-content-center align-items-center flex-md-row flex-column gap-3"
+            >
+              <a href="./pages/products/handheld-folding-floor-scrubber-RMM1/"
+                ><img src="../../../public/images/rmm1-1.png" alt="RMM1"
+              /></a>
+              <a href="./pages/products/handheld-folding-floor-scrubber-RMM1/"
+                ><img src="../../../public/images/rmm1-2.png" alt="RMM1"
+              /></a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <footer
-      class="text-center text-lg-start text-white"
-      style="background-color: #1c2331"
-    >
-      <!-- Footer content will display here -->
-    </footer>
-
     <script
       language="JavaScript"
       type="text/javascript"
@@ -121,10 +114,6 @@
       type="module"
       src="../single-product.js"
     ></script>
-    <script
-      language="JavaScript"
-      type="text/javascript"
-      src="../../../main.js"
-    ></script>
+    <script language="JavaScript" type="module" src="../../../main.js"></script>
   </body>
 </html>

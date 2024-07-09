@@ -211,23 +211,6 @@ nav {
   margin: 0;
 }
 
-.spacer {
-  display: flex;
-  justify-content: center;
-  align-items: start;
-  margin: 0 auto;
-  max-height: 600px;
-  max-width: 1200px;
-}
-
-.spacer img {
-  border-radius: 0 0 22px 22px;
-  box-shadow: 0 4px 16px 4px rgba(0, 0, 0, 0.514);
-  width: 100%;
-  filter: brightness(80%);
-  z-index: -1;
-}
-
 .content-box {
   width: 100%;
   background-color: white;
@@ -238,12 +221,6 @@ nav {
   max-width: 1200px;
   margin: 29% auto 0;
   padding: 22px 16px;
-}
-
-@media (width < 800px) {
-  .custom-container {
-    /* margin-top: 30%; */
-  }
 }
 
 .custom-container h1 {
@@ -265,32 +242,19 @@ nav {
   background-color: #b8b8b8;
 }
 
-#startchange {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 24px;
+.category-cards img:hover {
+  box-shadow: 0 4px 16px 2px rgba(0, 0, 0, 0.4);
+  filter: grayscale(0.5) brightness(0.5);
 }
+
 #startchange video {
   border-radius: 22px !important;
   box-shadow: 0 4px 16px 2px rgba(0, 0, 0, 0.4);
 }
 
 #startchange > img {
-  position: absolute;
-  top: 0%;
-  left: 0%;
   width: 400px;
   height: 400px;
-}
-
-#startchange .hot-product {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
 }
 
 .hot-product img {
@@ -300,6 +264,11 @@ nav {
 }
 
 @media (width < 800px) {
+  #startchange > img {
+    width: 60%;
+    height: auto;
+  }
+
   #startchange .hot-product {
     flex-direction: column;
   }
@@ -327,37 +296,22 @@ footer .fab {
 }
 
 .loader-wrapper {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #00a2ff;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  background-color: #00a2ff;
   z-index: 10;
 }
 .loader {
-  display: inline-block;
   width: 200px;
   height: 200px;
-  position: relative;
   border: 8px solid #fff;
   animation: loader 2s infinite ease;
 }
 .loader-inner {
   vertical-align: top;
-  display: inline-block;
-  width: 100%;
   background-color: #fff;
   animation: loader-inner 2s infinite ease-in;
 }
 .loader-inner img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 200px;
   height: 200px;
 }
