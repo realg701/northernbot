@@ -38,10 +38,10 @@ $(document).ready(function () {
 $(document).ready(function () {
   // NavBar
   $("body").append(`
-<nav>
-<div class="custom-navbar">
+<nav class="position-fixed top-0 w-100">
+<div class="custom-navbar d-flex justify-content-between align-items-center">
     <a href="${gitHubURL}/"><img class="logo" src="${logo + logoFix + logoFixGitHub + gitHubURL}/public/images/logo.png" alt="logo"></a>
-    <ul id="navbar-lg">
+    <ul id="navbar-lg" class="d-md-flex justify-content-center align-items-center">
         <a class="home-page" href="${gitHubURL}/">Home</a>
         <div class="products-page dropdown" >
             <a href="${gitHubURL}/pages/products" class="">Products</a>
@@ -53,12 +53,12 @@ $(document).ready(function () {
         <a class="location-page" href="${gitHubURL}/pages/location">Location</a>
         <a class="about-page" href="${gitHubURL}/pages/about">About</a>
         <a class="contact-page" href="${gitHubURL}/pages/contact">Contact</a>
-        <a class="contact-btn" href="tel:(905) 632-0559"><img class="" width="10" height="10" src="${gitHubURL}/public/images/svgs/telephone.svg" alt="telephone" /> (905) 632-0559 </a>
+        <a class="contact-btn d-flex justify-content-center align-items-center" href="tel:(905) 632-0559"><img class="" width="10" height="10" src="${gitHubURL}/public/images/svgs/telephone.svg" alt="telephone" /> (905) 632-0559 </a>
     </ul>
     <div id="navbar-md" class="dropdown">
-            <a class="contact-btn" href="tel:(905) 632-0559"><img class="" width="10" height="10" src="${gitHubURL}/public/images/svgs/telephone.svg" alt="telephone" /> (905) 632-0559 </a>
+            <a class="contact-btn d-flex justify-content-center align-items-center" href="tel:(905) 632-0559"><img class="" width="10" height="10" src="${gitHubURL}/public/images/svgs/telephone.svg" alt="telephone" /> (905) 632-0559 </a>
 
-        <button class="dropbtn"><img src="${
+        <button class="dropbtn d-flex align-items-center pe-auto border-0"><img src="${
           logo + logoFix + logoFixGitHub + gitHubURL
         }/public/images/svgs/menu_24dp.svg" alt="menu"></button>
         <div class="dropdown-content">
@@ -77,12 +77,12 @@ $(document).ready(function () {
 
   // Parallax
   $(".parallax").append(`
-      <img src="${
+      <img class="w-100" src="${
         logo + logoFix + logoFixGitHub + gitHubURL
       }/public/images/parallax.jpg" alt="floor scrubbers" />
-      <span class="hero-box">
+      <span class="hero-box position-absolute">
         <strong>Walk-Behind and Ride-On Floor Scrubbers</strong>
-        <p>US-made steel framed scrubbers that get the job done</p>
+        <p class="m-0">US-made steel framed scrubbers that get the job done</p>
       </span>
 `);
 
@@ -114,6 +114,7 @@ $(document).ready(function () {
       </div>
 `);
 
+  // Category Cards
   $(".category-cards").append(
     cardData.map(
       (item, index) => `
