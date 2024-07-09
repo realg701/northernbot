@@ -74,12 +74,39 @@ $(document).ready(function () {
 
   // Parallax
   $(".parallax").append(`
-      <img src="${gitHubURL}/public/images/parallax.jpeg" alt="floor scrubbers" />
+      <img src="${gitHubURL}/public/images/parallax.jpg" alt="floor scrubbers" />
       <span class="hero-box">
         <strong>Walk-Behind and Ride-On Floor Scrubbers</strong>
         <p>US-made steel framed scrubbers that get the job done</p>
       </span>
 `);
+
+  // Get A Quote
+  $("#about-us-container").append(`
+      <h1>About NortherBot</h1>
+      <div class="about-us d-flex justify-content-center text-center flex-wrap" style="max-width: 600px">
+        <p>
+          When you need industrial floor sweepers and scrubbers at a good
+          price that will get results, you need Factory Cat Cleaning
+          Equipment!
+        </p>
+        <p>
+          In business since 1976, All Lift Ltd. offer an extensive line of
+          reliable floor scrubbers and floor sweepers for rent and purchase
+          for any application and budget.
+        </p>
+        <p>
+          For over 40 years, customers all over Ontario have trusted us to
+          provide them with effective industrial floor cleaning equipment to
+          keep their business moving.
+        </p>
+        <p>
+          <a class="get-a-quote d-flex justify-content-center align-items-baseline gap-2 py-2 px-4 rounded-3" href="/pages/contact/"  style="max-width: 300px">
+            Get A Quote
+            <i class="fa-solid fa-circle-arrow-right fa-shake" style="color:#74c0fc" ></i>
+          </a>
+        </p>
+        </div>`);
 
   // Footer
   $("body").append(`<!-- Section: Social media -->

@@ -253,6 +253,18 @@ nav {
   font-weight: 700;
 }
 
+.get-a-quote {
+  background-color: #007dc5;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.get-a-quote:hover {
+  background-color: #b8b8b8;
+}
+
 #startchange {
   position: relative;
   display: flex;
@@ -260,7 +272,6 @@ nav {
   justify-content: center;
   flex-direction: column;
   gap: 24px;
-  /* width: 100%; */
 }
 #startchange video {
   border-radius: 22px !important;
@@ -270,7 +281,7 @@ nav {
 #startchange > img {
   position: absolute;
   top: 0%;
-  right: 0%;
+  left: 0%;
   width: 400px;
   height: 400px;
 }
@@ -298,7 +309,6 @@ nav {
   }
 }
 footer {
-  /* bottom: 0; */
   box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.4);
 }
 

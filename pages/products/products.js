@@ -4,10 +4,6 @@ const currentURL = window.location.href;
 const gitHubURL = currentURL.includes("github");
 const preFix = gitHubURL ? "/northernbot" : "";
 
-const floorScrubbers = data.filter(
-  (item) => item.category == "Floor Scrubbers"
-);
-const floorSweepers = data.filter((item) => item.category == "Floor Sweepers");
 $("#products-container").ready(function () {
   $("#products-container").append(
     data.map((product, index) => {
@@ -32,6 +28,10 @@ $("#products-container").ready(function () {
   );
 });
 
+const floorScrubbers = data.filter(
+  (item) => item.category == "Floor Scrubbers"
+);
+
 // Floor Scrubbers
 $("#floor-scrubbers-container").ready(function () {
   $("#floor-scrubbers-container").append(
@@ -54,6 +54,8 @@ $("#floor-scrubbers-container").ready(function () {
     })
   );
 });
+
+const floorSweepers = data.filter((item) => item.category == "Floor Sweepers");
 
 // Floor Sweepers
 $("#floor-sweepers-container").ready(function () {
