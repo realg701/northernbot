@@ -147,8 +147,7 @@ $(document).ready(function () {
     style="background-color: #1c2331"
     >
     <section class="p-4" style="background-color:#64c6ff;color:black">
-        <div class="d-flex justify-content-center justify-content-md-between
-     align-items-baseline mx-auto" style="max-width: 1200px;">
+      <div class="d-flex justify-content-center justify-content-md-between align-items-baseline mx-auto" style="max-width: 1200px;">
             <!-- Left -->
             <div class="d-none d-md-block social-text mx-2">
                 <span>Get connected with us on social networks:</span>
@@ -182,13 +181,12 @@ $(document).ready(function () {
     <section class="">
         <div class="container text-center text-md-start mt-5">
             <!-- Grid row -->
-            <div class="row mt-3">
+            <div class="d-flex flex-column flex-md-row">
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
-                    <a href="${gitHubURL}/"><h6 class="text-uppercase fw-bold text-white">NorthernBot</h6></a>
-                    <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
-                    <p>
+                    <a href="${gitHubURL}/"><img class="w-75" src="/public/images/logo-light.png"/></a>
+                    <p class="mt-3">
                         Here you can use rows and columns to organize your footer content. Lorem ipsum
                         dolor sit amet, consectetur adipisicing elit.
                     </p>
@@ -222,7 +220,7 @@ $(document).ready(function () {
                     <a href="${gitHubURL}/pages/contact"><h6 class="text-uppercase fw-bold text-white">Contact</h6></a>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto"
                         style="width: 60px; background-color: #7c4dff; height: 2px" />
-                    <p><i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+                    <p><i class="fas fa-home mr-3"></i> <a href="https://maps.app.goo.gl/ktRQt2RCoAspBm8b7"> 2390 Prospect St, Burlington ON L7R 2A8</a></p>
                     <p><i class="fas fa-envelope mr-3"></i> <a href="mailto:office@northernbot.com"
                       >office@northernbot.com</a
                     ></p>

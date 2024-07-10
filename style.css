@@ -1,19 +1,20 @@
 * {
   box-sizing: border-box;
-  transition: all 0.3s linear !important;
+  transition: all 0.3s linear;
 }
-
 body {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   height: 100vh;
 }
-
+h1,
+h2 {
+  color: #00a2ff !important;
+}
 a {
   text-decoration: none !important;
 }
-
 a:hover {
   color: rgb(0, 119, 255);
 }
