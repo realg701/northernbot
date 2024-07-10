@@ -12,7 +12,7 @@ export const cardData = [
       "/pages/products/handheld-folding-floor-scrubber-rmm1/images/image-1.jpeg",
   },
   {
-    link: "/pages/products/category/smart-mop/",
+    link: "/pages/products/category/smart-mops/",
     title: "Smart Mop",
     image:
       "/pages/products/handheld-folding-floor-scrubber-rmm1/images/image-1.jpeg",

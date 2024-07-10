@@ -48,6 +48,7 @@ $(document).ready(function () {
             <div class="products-dropdown-content dropdown-content">
                 <a href="${gitHubURL}/pages/products/category/floor-scrubbers">Floor Scrubbers</a>
                 <a href="${gitHubURL}/pages/products/category/floor-sweepers">Floor Sweepers</a>
+                <a href="${gitHubURL}/pages/products/category/smart-mops">Smart Mops</a>
             </div>
         </div>
         <a class="location-page" href="${gitHubURL}/pages/location">Location</a>
@@ -66,6 +67,7 @@ $(document).ready(function () {
             <a href="${gitHubURL}/pages/products">Products</a>
             <a href="${gitHubURL}/pages/products/category/floor-scrubbers">Floor Scrubbers</a>
             <a href="${gitHubURL}/pages/products/category/floor-sweepers">Floor Sweepers</a>
+            <a href="${gitHubURL}/pages/products/category/smart-mops">Smart Mops</a>
             <a class="about-page" href="${gitHubURL}/pages/location">Location</a>
             <a href="${gitHubURL}/pages/about">About</a>
             <a href="${gitHubURL}/pages/contact">Contact</a>
@@ -120,12 +122,12 @@ $(document).ready(function () {
       (item, index) => `
           <a
             key="${index}"
-            href="${item.link}"
+            href="${gitHubURL + item.link}"
             class="d-flex position-relative text-center"
           >
             <img
               class="d-flex w-100"
-              src="${item.image}"
+              src="${gitHubURL + item.image}"
               alt=""
             />
             <span

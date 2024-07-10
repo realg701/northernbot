@@ -28,11 +28,11 @@ $("#products-container").ready(function () {
   );
 });
 
+// Floor Scrubbers
 const floorScrubbers = data.filter(
   (item) => item.category == "Floor Scrubbers"
 );
 
-// Floor Scrubbers
 $("#floor-scrubbers-container").ready(function () {
   $("#floor-scrubbers-container").append(
     floorScrubbers.map((product, index) => {
@@ -55,12 +55,37 @@ $("#floor-scrubbers-container").ready(function () {
   );
 });
 
+// Floor Sweepers
 const floorSweepers = data.filter((item) => item.category == "Floor Sweepers");
 
-// Floor Sweepers
-$("#floor-sweepers-container").ready(function () {
+$("#smart-sweepers-container").ready(function () {
   $("#floor-sweepers-container").append(
     floorSweepers.map((product, index) => {
+      const productTitle = product.title;
+      const toLink = productTitle.replaceAll(" ", "-").toLowerCase();
+      return `
+<a key=${index} href=${preFix + "/pages/products/" + toLink}>
+  <div class="card">
+    <img src=${"../." + product.image[0]} alt="${
+        product.title
+      }" style="width:100%">
+    <div class="card-container">
+      <h4 alt=${product.title}><b>${product.title}</b></h4>
+      <p>${product.category}</p>
+    </div>
+  </div>
+</a>
+`;
+    })
+  );
+});
+
+// Smart Mops
+const smartMops = data.filter((item) => item.category == "Smart Mops");
+
+$("#smart-mops-container").ready(function () {
+  $("#smart-mops-container").append(
+    smartMops.map((product, index) => {
       const productTitle = product.title;
       const toLink = productTitle.replaceAll(" ", "-").toLowerCase();
       return `

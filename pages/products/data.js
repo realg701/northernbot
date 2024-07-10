@@ -62,7 +62,7 @@ export const data = [
   },
   {
     title: "Walk Behind Floor Scrubber NB03",
-    category: "Floor Scrubbers",
+    category: "Floor Sweepers",
     image: ["./walk-behind-floor-scrubber-nb03/images/image-1.jpeg"],
     features: [
       "Work efficiency:2000m/h",
@@ -82,7 +82,7 @@ export const data = [
   },
   {
     title: "Walk Behind Smart Mop i5",
-    category: "Floor Sweepers",
+    category: "Smart Mops",
     image: ["./mini-ride-on-floor-scrubber-nb02/images/image-2.jpeg"],
     features: [
       "Rated voltage: DC-36V",
