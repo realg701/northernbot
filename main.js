@@ -126,7 +126,7 @@ $(document).ready(function () {
             class="d-flex position-relative text-center"
           >
             <img
-              class="d-flex w-100"
+              class="d-flex justify-content-center align-items-center w-100 "
               src="${gitHubURL + item.image}"
               alt=""
             />
@@ -185,7 +185,7 @@ $(document).ready(function () {
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
-                    <a href="${gitHubURL}/"><img class="w-75" src="/public/images/logo-light.png"/></a>
+                    <a href="${gitHubURL}/"><img class="w-75" src="${logo + logoFix + logoFixGitHub + gitHubURL}/public/images/logo-light.png"/></a>
                     <p class="mt-3">
                         Here you can use rows and columns to organize your footer content. Lorem ipsum
                         dolor sit amet, consectetur adipisicing elit.

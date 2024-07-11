@@ -20,3 +20,5 @@ function plusDivs(n) {
 }
 
 showDivs(slideIndex);
+
+setInterval(plusDivs(1), 1000);

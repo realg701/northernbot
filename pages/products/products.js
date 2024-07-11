@@ -7,19 +7,20 @@ const preFix = gitHubURL ? "/northernbot" : "";
 $("#products-container").ready(function () {
   $("#products-container").append(
     data.map((product, index) => {
-      const productTitle = product.title;
-      const toLink = productTitle.replaceAll(" ", "-").toLowerCase();
+      const productTitle = product.title.replaceAll(" ", "-").toLowerCase();
+      const productCategory = product.category
+        .replaceAll(" ", "-")
+        .toLowerCase();
       return `
 <div class="card" key=${index}>
-  <a href=${preFix + "/pages/products/" + toLink}>
+  <a href=${preFix + "/pages/products/" + productTitle}>
     <img src=${product.image[0]} alt="${product.title}" style="width:100%">
     <div class="card-container">
       <h4 alt=${product.title}><b>${product.title}</b></h4>
-      <p><a href="/pages/products/category/${
-        product.category == "Floor Scrubbers"
-          ? "floor-scrubbers"
-          : "floor-sweepers"
-      }">${product.category}</a></p>
+      <p><a href="/pages/products/category/${productCategory}">${
+        product.category
+      }</a></p>
+      <p style="margin: 0;">${product.purpose + " " + product.category}</p>
     </div>
   </a>
 </div>
@@ -47,6 +48,7 @@ $("#floor-scrubbers-container").ready(function () {
     <div class="card-container">
       <h4 alt=${product.title}><b>${product.title}</b></h4>
       <p>${product.category}</p>
+      <p>${product.purpose + product.category}</p>
     </div>
   </div>
 </a>
@@ -97,6 +99,7 @@ $("#smart-mops-container").ready(function () {
     <div class="card-container">
       <h4 alt=${product.title}><b>${product.title}</b></h4>
       <p>${product.category}</p>
+      <p>${product.purpose + product.category}</p>
     </div>
   </div>
 </a>
