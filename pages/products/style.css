@@ -20,7 +20,12 @@
   box-shadow: 0 3px 5px 2px rgba(0, 0, 0, 0.16),
     0 5px 10px 5px rgba(0, 0, 0, 0.12);
 }
-
+.card:hover img {
+  transform: scale(1.2);
+}
+.card-image-container {
+  overflow: hidden;
+}
 .card-container {
   padding: 16px;
 }

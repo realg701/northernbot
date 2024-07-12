@@ -131,7 +131,7 @@ $(document).ready(function () {
               alt=""
             />
             <span
-              class="position-absolute top-50 start-50 translate-middle bg-dark text-light p-2 h6"
+              class="position-absolute w-100 start-50 translate-middle bg-dark text-light p-2 h6"
               >${item.title}</span
             >
           </a>

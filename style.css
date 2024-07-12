@@ -192,16 +192,24 @@ nav {
 .get-a-quote:hover {
   background-color: #b8b8b8;
 }
+
+.category-cards a {
+  overflow: hidden;
+}
 .category-cards img {
   width: 300px;
   height: 300px;
 }
-.category-cards img:hover {
+.category-cards span {
+  top: -40px;
+}
+.category-cards a:hover img {
+  transform: scale(1.2);
   box-shadow: 0 4px 16px 2px rgba(0, 0, 0, 0.4);
   filter: grayscale(0.5) brightness(0.5);
 }
-.category-cards a:hover {
-  filter: grayscale(0.5) brightness(0.5);
+.category-cards a:hover span {
+  top: 50%;
 }
 
 #startchange video {

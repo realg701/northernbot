@@ -14,7 +14,9 @@ $("#products-container").ready(function () {
       return `
 <div class="card" key=${index}>
   <a href=${preFix + "/pages/products/" + productTitle}>
-    <img src=${product.image[0]} alt="${product.title}" style="width:100%">
+    <div class="card-image-container">
+      <img src=${product.image[0]} alt="${product.title}" style="width:100%">
+    </div>
     <div class="card-container">
       <h4 alt=${product.title}><b>${product.title}</b></h4>
       <p><a href="/pages/products/category/${productCategory}">${
@@ -29,80 +31,40 @@ $("#products-container").ready(function () {
   );
 });
 
-// Floor Scrubbers
-const floorScrubbers = data.filter(
-  (item) => item.category == "Floor Scrubbers"
-);
+// Filtered Category Scrubbers
+const fixUp = gitHubURL ? 7 : 6;
+const categoryFind = currentURL
+  .split("/")
+  [fixUp].split("-")
+  .map((a) => a[0].toUpperCase() + a.slice(1))
+  .join(" ");
+const FilteredScrubbers = data.filter((item) => item.category == categoryFind);
 
-$("#floor-scrubbers-container").ready(function () {
-  $("#floor-scrubbers-container").append(
-    floorScrubbers.map((product, index) => {
-      const productTitle = product.title;
-      const toLink = productTitle.replaceAll(" ", "-").toLowerCase();
+$("#category-container").ready(function () {
+  $("#category-container").append(
+    FilteredScrubbers.map((product, index) => {
+      const productTitle = product.title.replaceAll(" ", "-").toLowerCase();
+      const productCategory = product.category
+        .replaceAll(" ", "-")
+        .toLowerCase();
       return `
-<a key=${index} href=${preFix + "/pages/products/" + toLink}>
-  <div class="card">
-    <img src=${"../." + product.image[0]} alt="${
+<div key=${index} class="card">
+  <a href=${preFix + "/pages/products/" + productTitle}>
+    <div class="card-image-container">
+      <img src=${"../." + product.image[0]} alt="${
         product.title
       }" style="width:100%">
+    </div>
     <div class="card-container">
       <h4 alt=${product.title}><b>${product.title}</b></h4>
-      <p>${product.category}</p>
-      <p>${product.purpose + product.category}</p>
+      <p>
+        <a href="/pages/products/category/${productCategory}">
+        ${product.category}</a>
+      </p>
+      <p style="margin: 0;">${product.purpose + " " + product.category}</p>
     </div>
-  </div>
-</a>
-`;
-    })
-  );
-});
-
-// Floor Sweepers
-const floorSweepers = data.filter((item) => item.category == "Floor Sweepers");
-
-$("#smart-sweepers-container").ready(function () {
-  $("#floor-sweepers-container").append(
-    floorSweepers.map((product, index) => {
-      const productTitle = product.title;
-      const toLink = productTitle.replaceAll(" ", "-").toLowerCase();
-      return `
-<a key=${index} href=${preFix + "/pages/products/" + toLink}>
-  <div class="card">
-    <img src=${"../." + product.image[0]} alt="${
-        product.title
-      }" style="width:100%">
-    <div class="card-container">
-      <h4 alt=${product.title}><b>${product.title}</b></h4>
-      <p>${product.category}</p>
-    </div>
-  </div>
-</a>
-`;
-    })
-  );
-});
-
-// Smart Mops
-const smartMops = data.filter((item) => item.category == "Smart Mops");
-
-$("#smart-mops-container").ready(function () {
-  $("#smart-mops-container").append(
-    smartMops.map((product, index) => {
-      const productTitle = product.title;
-      const toLink = productTitle.replaceAll(" ", "-").toLowerCase();
-      return `
-<a key=${index} href=${preFix + "/pages/products/" + toLink}>
-  <div class="card">
-    <img src=${"../." + product.image[0]} alt="${
-        product.title
-      }" style="width:100%">
-    <div class="card-container">
-      <h4 alt=${product.title}><b>${product.title}</b></h4>
-      <p>${product.category}</p>
-      <p>${product.purpose + product.category}</p>
-    </div>
-  </div>
-</a>
+  </a>
+</div>
 `;
     })
   );
