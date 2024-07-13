@@ -5,6 +5,7 @@ const currentURL = window.location.href;
 const gitHubURL = currentURL.includes("github") ? "/northernbot" : "";
 
 const logo = currentURL.includes("pages") ? "../../" : "";
+const logoFixer = currentURL.includes("category") ? "../../.." : "";
 const logoFix = currentURL.split("/").length == 7 ? ".." : "";
 const logoFixGitHub = currentURL.split("/").length == 8 ? "../.." : "";
 
@@ -40,13 +41,13 @@ $(document).ready(function () {
   $("body").append(`
 <nav class="position-fixed top-0 w-100">
 <div class="custom-navbar d-flex justify-content-between align-items-center">
-    <a href="${gitHubURL}/"><img class="logo" src="${logo + logoFix + logoFixGitHub + gitHubURL}/public/images/logo.png" alt="logo"></a>
+    <a href="${gitHubURL}/"><img class="logo" src="${logo + logoFixer + logoFix + logoFixGitHub + gitHubURL}/public/images/logo.png" alt="logo"></a>
     <ul id="navbar-lg" class="d-md-flex justify-content-center align-items-center">
     </ul>
     <div id="navbar-md" class="dropdown">
       <a class="contact-btn d-flex justify-content-center align-items-center" href="tel:(905) 632-0559"><img class="" width="10" height="10" src="${gitHubURL}/public/images/svgs/telephone.svg" alt="telephone" /> (905) 632-0559 </a>
       <button class="dropbtn d-flex align-items-center pe-auto border-0"><img src="${
-        logo + logoFix + logoFixGitHub + gitHubURL
+        logo + logoFixer + logoFix + logoFixGitHub + gitHubURL
       }/public/images/svgs/menu_24dp.svg" alt="menu"></button>
       <div id="dropdown-content" class="dropdown-content"></div>
     </div>
@@ -72,7 +73,7 @@ $(document).ready(function () {
   // Parallax
   $(".parallax").append(`
       <img class="w-100" src="${
-        logo + logoFix + logoFixGitHub + gitHubURL
+        logo + logoFixer + logoFix + logoFixGitHub + gitHubURL
       }/public/images/parallax.jpg" alt="floor scrubbers" />
       <span class="hero-box position-absolute">
         <strong>Walk-Behind and Ride-On Floor Scrubbers</strong>
@@ -177,7 +178,7 @@ $(document).ready(function () {
                 <!-- Grid column -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
-                    <a href="${gitHubURL}/"><img class="w-75" src="${logo + logoFix + logoFixGitHub + gitHubURL}/public/images/logo-light.png"/></a>
+                    <a href="${gitHubURL}/"><img class="w-75" src="${logo + logoFixer + logoFix + logoFixGitHub + gitHubURL}/public/images/logo-light.png"/></a>
                     <p class="mt-3">
                         Here you can use rows and columns to organize your footer content. Lorem ipsum
                         dolor sit amet, consectetur adipisicing elit.
