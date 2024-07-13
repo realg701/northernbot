@@ -1,5 +1,5 @@
 // Apply CSS On Scroll
-import { cardData } from "./data.js";
+import { cardData, navLink, dropDownLink } from "./data.js";
 
 const currentURL = window.location.href;
 const gitHubURL = currentURL.includes("github") ? "/northernbot" : "";
@@ -42,40 +42,32 @@ $(document).ready(function () {
 <div class="custom-navbar d-flex justify-content-between align-items-center">
     <a href="${gitHubURL}/"><img class="logo" src="${logo + logoFix + logoFixGitHub + gitHubURL}/public/images/logo.png" alt="logo"></a>
     <ul id="navbar-lg" class="d-md-flex justify-content-center align-items-center">
-        <a class="home-page" href="${gitHubURL}/">Home</a>
-        <div class="products-page dropdown" >
-            <a href="${gitHubURL}/pages/products" class="">Products</a>
-            <div class="products-dropdown-content dropdown-content">
-                <a href="${gitHubURL}/pages/products/category/floor-scrubbers">Floor Scrubbers</a>
-                <a href="${gitHubURL}/pages/products/category/floor-sweepers">Floor Sweepers</a>
-                <a href="${gitHubURL}/pages/products/category/smart-mops">Smart Mops</a>
-            </div>
-        </div>
-        <a class="location-page" href="${gitHubURL}/pages/location">Location</a>
-        <a class="about-page" href="${gitHubURL}/pages/about">About</a>
-        <a class="contact-page" href="${gitHubURL}/pages/contact">Contact</a>
-        <a class="contact-btn d-flex justify-content-center align-items-center" href="tel:(905) 632-0559"><img class="" width="10" height="10" src="${gitHubURL}/public/images/svgs/telephone.svg" alt="telephone" /> (905) 632-0559 </a>
     </ul>
     <div id="navbar-md" class="dropdown">
-            <a class="contact-btn d-flex justify-content-center align-items-center" href="tel:(905) 632-0559"><img class="" width="10" height="10" src="${gitHubURL}/public/images/svgs/telephone.svg" alt="telephone" /> (905) 632-0559 </a>
-
-        <button class="dropbtn d-flex align-items-center pe-auto border-0"><img src="${
-          logo + logoFix + logoFixGitHub + gitHubURL
-        }/public/images/svgs/menu_24dp.svg" alt="menu"></button>
-        <div class="dropdown-content">
-            <a href="${gitHubURL}/">Home</a>
-            <a href="${gitHubURL}/pages/products">Products</a>
-            <a href="${gitHubURL}/pages/products/category/floor-scrubbers">Floor Scrubbers</a>
-            <a href="${gitHubURL}/pages/products/category/floor-sweepers">Floor Sweepers</a>
-            <a href="${gitHubURL}/pages/products/category/smart-mops">Smart Mops</a>
-            <a class="about-page" href="${gitHubURL}/pages/location">Location</a>
-            <a href="${gitHubURL}/pages/about">About</a>
-            <a href="${gitHubURL}/pages/contact">Contact</a>
-        </div>
+      <a class="contact-btn d-flex justify-content-center align-items-center" href="tel:(905) 632-0559"><img class="" width="10" height="10" src="${gitHubURL}/public/images/svgs/telephone.svg" alt="telephone" /> (905) 632-0559 </a>
+      <button class="dropbtn d-flex align-items-center pe-auto border-0"><img src="${
+        logo + logoFix + logoFixGitHub + gitHubURL
+      }/public/images/svgs/menu_24dp.svg" alt="menu"></button>
+      <div id="dropdown-content" class="dropdown-content"></div>
     </div>
 </div>
 </nav>
 `);
+
+  $("#navbar-lg").append(
+    navLink.map(
+      (link) =>
+        `<a href="${gitHubURL + link.link}"  ${
+          link.class ? `class="${link.class}"` : ""
+        }>${link.image || "" + link.title}</a>`
+    )
+  );
+
+  $("#dropdown-content").append(
+    dropDownLink.map(
+      (link) => `<a href="${gitHubURL + link.link}">${link.title}</a>`
+    )
+  );
 
   // Parallax
   $(".parallax").append(`
@@ -131,7 +123,7 @@ $(document).ready(function () {
               alt=""
             />
             <span
-              class="position-absolute w-100 start-50 translate-middle bg-dark text-light p-2 h6"
+              class="position-absolute top-50 start-50 translate-middle bg-dark text-light p-2 h6"
               >${item.title}</span
             >
           </a>

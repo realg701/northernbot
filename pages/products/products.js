@@ -18,11 +18,13 @@ $("#products-container").ready(function () {
       <img src=${product.image[0]} alt="${product.title}" style="width:100%">
     </div>
     <div class="card-container">
-      <h4 alt=${product.title}><b>${product.title}</b></h4>
-      <p><a href="/pages/products/category/${productCategory}">${
+      <h4 style="margin: 16px 0;" alt=${product.title}><b>${
+        product.title
+      }</b></h4>
+      <p style="margin: 8px 0;">${product.purpose + " " + product.category}</p>
+      <p style="margin: 8px 0;"><a href="/pages/products/category/${productCategory}">${
         product.category
       }</a></p>
-      <p style="margin: 0;">${product.purpose + " " + product.category}</p>
     </div>
   </a>
 </div>
