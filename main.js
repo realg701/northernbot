@@ -5,7 +5,7 @@ const currentURL = window.location.href;
 const gitHubURL = currentURL.includes("github") ? "/northernbot" : "";
 
 const logo = currentURL.includes("pages") ? "../../" : "";
-const logoFixer = currentURL.includes("category") ? "../../.." : "";
+const logoFixer = currentURL.includes("category") ? "../../" : "";
 const logoFix = currentURL.split("/").length == 7 ? ".." : "";
 const logoFixGitHub = currentURL.split("/").length == 8 ? "../.." : "";
 
