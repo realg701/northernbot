@@ -23,13 +23,13 @@ $("#product-container").ready(function () {
         result.title
       }><b>${result.purpose + " " + result.category + " | "}${result.title}</b></h2>
       <p>${result.category}</p>
-      <h2>Features:</h2>
+      <h2>Specifications:</h2>
     </div>
   `);
 
-  $("#product-features").append(
-    result.features.map(
-      (feature, index) => `<li key="${index}">${feature}</li>`
+  $("#product-specifications").append(
+    result.specifications.map(
+      (specification, index) => `<li key="${index}">${specification}</li>`
     )
   );
 
@@ -44,4 +44,10 @@ $("#product-container").ready(function () {
       ${result.description}
     </p>
   `);
+
+  $("#product-features").append(
+    result.features?.map(
+      (feature, index) => `<li key="${index}">${feature}</li>`
+    )
+  );
 });

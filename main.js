@@ -41,7 +41,7 @@ $(document).ready(function () {
   $("body").append(`
 <nav class="position-fixed top-0 w-100">
 <div class="custom-navbar d-flex justify-content-between align-items-center">
-    <a href="${gitHubURL}/"><img class="logo" src="${logo + logoFixer + logoFix + logoFixGitHub + gitHubURL}/public/images/logo.png" alt="logo"></a>
+    <a href="${gitHubURL}/"><img class="logo" src="${logo + logoFixer + logoFix + logoFixGitHub + gitHubURL}/public/images/favicon-2.png" alt="logo">NorthernBot</a>
     <ul id="navbar-lg" class="d-md-flex justify-content-center align-items-center">
     </ul>
     <div id="navbar-md" class="dropdown">
@@ -119,7 +119,7 @@ $(document).ready(function () {
             class="d-flex position-relative text-center"
           >
             <img
-              class="d-flex justify-content-center align-items-center w-100 "
+              class="d-flex justify-content-center align-items-center w-100 h-100 "
               src="${gitHubURL + item.image}"
               alt=""
             />
@@ -134,20 +134,19 @@ $(document).ready(function () {
 
   // Footer
   $("body").append(`
-<!-- Section: Social media -->
 <footer
     class="text-center text-lg-start text-white"
     style="background-color: #1c2331"
     >
     <section class="p-4" style="background-color:#64c6ff;color:black">
       <div class="d-flex justify-content-center justify-content-md-between align-items-baseline mx-auto" style="max-width: 1200px;">
-            <!-- Left -->
+            <!-- Left: Text -->
             <div class="d-none d-md-block social-text mx-2">
                 <span>Get connected with us on social networks:</span>
             </div>
-            <!-- Left -->
+            <!-- Left: Text -->
     
-            <!-- Right -->
+            <!-- Right: Social media -->
             <div class="social-links">
                 <a href="" class="text-white mx-3">
                     <i class="fab fa-facebook-f" style="color:black"></i>
@@ -165,68 +164,67 @@ $(document).ready(function () {
                     <i class="fab fa-linkedin"></i>
                 </a>
             </div>
-            <!-- Right -->
+            <!-- Right: Social media -->
         </div>
     </section>
-    <!-- Section: Social media -->
     
-    <!-- Section: Links  -->
     <section class="">
         <div class="container text-center text-md-start mt-5">
-            <!-- Grid row -->
             <div class="d-flex flex-column flex-md-row">
-                <!-- Grid column -->
+                <!-- Company -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                     <!-- Content -->
                     <a href="${gitHubURL}/"><img class="w-75" src="${logo + logoFixer + logoFix + logoFixGitHub + gitHubURL}/public/images/logo-light.png"/></a>
                     <p class="mt-3">
-                        Here you can use rows and columns to organize your footer content. Lorem ipsum
-                        dolor sit amet, consectetur adipisicing elit.
+                        Walk-Behind and Ride-On Floor Scrubbers US-made steel framed scrubbers that get the job done
                     </p>
                 </div>
-                <!-- Grid column -->
+                <!-- Company -->
     
-                <!-- Grid column -->
+                <!-- Pages -->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <!-- Links -->
+                    <a href="${gitHubURL}/"><h6 class="text-uppercase fw-bold text-white">Home</h6></a>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
                     <a href="${gitHubURL}/pages/products"><h6 class="text-uppercase fw-bold text-white">Products</h6></a>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto"
                         style="width: 60px; background-color: #7c4dff; height: 2px" />
-                    <p>
-                        <a href="#!" class="text-white">Home</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-white">Products</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-white">About</a>
-                    </p>
-                    <p>
-                        <a href="#!" class="text-white">Contact</a>
-                    </p>
-                </div>
-                <!-- Grid column -->
-    
-                <!-- Grid column -->
-                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <!-- Links -->
-                    <a href="${gitHubURL}/pages/contact"><h6 class="text-uppercase fw-bold text-white">Contact</h6></a>
+                    <a href="${gitHubURL}/pages/location"><h6 class="text-uppercase fw-bold text-white">Location</h6></a>
                     <hr class="mb-4 mt-0 d-inline-block mx-auto"
                         style="width: 60px; background-color: #7c4dff; height: 2px" />
-                    <p><i class="fas fa-home mr-3"></i> <a href="https://maps.app.goo.gl/ktRQt2RCoAspBm8b7"> 2390 Prospect St, Burlington ON L7R 2A8</a></p>
-                    <p><i class="fas fa-envelope mr-3"></i> <a href="mailto:office@northernbot.com"
-                      >office@northernbot.com</a
-                    ></p>
-                    <p><i class="fas fa-phone mr-3"></i>
-                        <a href="tel:(905) 632-0559">(905) 632-0559</a>
+                    <a href="${gitHubURL}/pages/about"><h6 class="text-uppercase fw-bold text-white">About</h6></a>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                </div>
+                <!-- Pages -->
+    
+                <!-- Contact -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <a href="${gitHubURL}/pages/contact">
+                      <h6 class="text-uppercase fw-bold text-white">Contact</h6>
+                    </a>
+                    <hr class="mb-4 mt-0 d-inline-block mx-auto"
+                        style="width: 60px; background-color: #7c4dff; height: 2px" />
+                    <p>
+                      <i class="fas fa-home me-2"></i> 
+                      <a href="https://maps.app.goo.gl/ktRQt2RCoAspBm8b7" target="_blank"> 2390 Prospect St, Burlington</a>
+                    </p>
+                    <p>
+                      <i class="fas fa-envelope me-2"></i>
+                      <a href="mailto:office@northernbot.com"
+                      >office@northernbot.com</a>
+                    </p>
+                    <p>
+                      <i class="fas fa-phone me-2"></i>
+                      <a href="tel:(905) 632-0559">(905) 632-0559</a>
                     </p>
                 </div>
-                <!-- Grid column -->
+                <!-- Contact -->
             </div>
-            <!-- Grid row -->
         </div>
     </section>
-    <!-- Section: Links  -->
     
     <!-- Copyright -->
     <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">

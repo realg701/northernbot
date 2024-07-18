@@ -30,11 +30,15 @@ $("#category-container").ready(function () {
     </div>
     <div class="card-container">
       <h4 alt=${product.title}><b>${product.title}</b></h4>
-      <p>
-        <a href="/pages/products/category/${productCategory}">
-        ${product.category}</a>
+      <p class="text-truncate" style="margin: 8px 0;">${
+        product.purpose + " " + product.category
+      }</p>
+      <p style="margin: 8px 0;">
+        <a href="/pages/products/category/${productCategory}">${
+        product.category
+      }
+        </a>
       </p>
-      <p style="margin: 0;">${product.purpose + " " + product.category}</p>
     </div>
   </a>
 </div>

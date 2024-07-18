@@ -3,8 +3,8 @@ export const data = [
     title: "RMM1",
     category: "Floor Scrubbers",
     purpose: "Handheld Folding",
-    image: ["./rmm1/images/image-1.jpeg"],
-    features: [
+    image: ["./rmm1/images/1.jpg"],
+    specifications: [
       "Cleaning width: 1600m/h",
       "Battery capacity: 4hr",
       "Gallon solution: 6 Gallons",
@@ -19,13 +19,22 @@ export const data = [
       "Hotels, supermarkets, hospitals, office spaces, parking lots, factories, ports, etc.",
     description:
       "Solution tank for holding cleaning solution. Recovery tank to collect dirty water and debris. Adjustable pressure and speed settings for customization. Maneuverability features for navigating around obstacles. Battery or power source for operation. Durable construction for longevity. Safety features such as emergency stop buttons. Easy-to-maintain design for convenience.",
+    features: [
+      "The model is compact and suitable for special occasions.",
+      "Large water injection port enables rapid water injection.",
+      "Use fur skirt instead of traditional rubber skirt for longer service life.",
+      "Built-in car charger to prevent loss, fall and water ingress.",
+      "Lead-acid maintenance-free battery maintains continuous working hours.",
+      "6.Standard PU acid-proof, alkali-proof, oil-proof and water-absorbent tape.",
+      "The armrests are foldable for easy transportation.",
+    ],
   },
   {
     title: "NB01",
     category: "Floor Scrubbers",
     purpose: "Walk Behind",
-    image: ["./nb01/images/image-1.jpeg"],
-    features: [
+    image: ["./nb01/images/1.jpg"],
+    specifications: [
       "Cleaning width: 510mm",
       "Working efficiency: 2000m/h",
       "Cleaning water tank: 45L",
@@ -47,7 +56,7 @@ export const data = [
     category: "Floor Scrubbers",
     purpose: "Mini Ride On",
     image: ["./nb02/images/image-1.jpeg"],
-    features: [
+    specifications: [
       "Work efficiency:2000m/h",
       "Clean water tank:60L",
       "Cleaning width:510mm",
@@ -68,7 +77,7 @@ export const data = [
     category: "Floor Sweepers",
     purpose: "Walk Behind",
     image: ["./nb03/images/image-1.jpeg"],
-    features: [
+    specifications: [
       "Work efficiency:2000m/h",
       "Clean water tank:60L",
       "Cleaning width:510mm",
@@ -89,7 +98,7 @@ export const data = [
     category: "Smart Mops",
     purpose: "Walk Behind",
     image: ["./i5/images/image-8.jpeg"],
-    features: [
+    specifications: [
       "Rated voltage: DC-36V",
       "Working efficiency: 800-1000 ㎡/h",
       "Brush speed: 0-350prm/min",

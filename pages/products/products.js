@@ -21,10 +21,15 @@ $("#products-container").ready(function () {
       <h4 style="margin: 16px 0;" alt=${product.title}><b>${
         product.title
       }</b></h4>
-      <p style="margin: 8px 0;">${product.purpose + " " + product.category}</p>
-      <p style="margin: 8px 0;"><a href="/pages/products/category/${productCategory}">${
+      <p class="text-truncate" style="margin: 8px 0;">${
+        product.purpose + " " + product.category
+      }</p>
+      <p style="margin: 8px 0;">
+        <a href="/pages/products/category/${productCategory}">${
         product.category
-      }</a></p>
+      }
+        </a>
+      </p>
     </div>
   </a>
 </div>
