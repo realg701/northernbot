@@ -25,30 +25,6 @@ a:hover {
   color: var(--color) !important;
 }
 
-.logo {
-  margin-right: 8px;
-  width: 60px;
-  /* height: 5em; */
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 1em aquamarine);
-}
-@media (prefers-reduced-motion: no-preference) {
-  a .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 nav {
   background: #ffffff88;
   height: 70px;
@@ -62,7 +38,7 @@ nav {
   margin: 0 auto;
 }
 .custom-navbar img {
-  /* width: 170px; */
+  width: 170px;
   height: auto;
   filter: drop-shadow(1px 1px 8px black);
 }
@@ -221,12 +197,10 @@ nav {
 }
 
 .category-cards a span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 140px;
 }
 .category-cards a {
+  border-radius: 16px;
   overflow: hidden;
 }
 .category-cards img {
@@ -265,6 +239,7 @@ nav {
     width: 100% !important;
   }
 }
+
 /* Footer */
 footer {
   box-shadow: 0px 0px 16px 8px rgba(0, 0, 0, 0.4);
@@ -280,6 +255,7 @@ footer .fab {
   font-size: 22px;
   color: black;
 }
+
 /* Loader */
 .loader-wrapper {
   display: flex;

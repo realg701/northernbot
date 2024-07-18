@@ -41,7 +41,7 @@ $(document).ready(function () {
   $("body").append(`
 <nav class="position-fixed top-0 w-100">
 <div class="custom-navbar d-flex justify-content-between align-items-center">
-    <a href="${gitHubURL}/"><img class="logo" src="${logo + logoFixer + logoFix + logoFixGitHub + gitHubURL}/public/images/favicon-2.png" alt="logo">NorthernBot</a>
+    <a href="${gitHubURL}/"><img class="logo" src="${logo + logoFixer + logoFix + logoFixGitHub + gitHubURL}/public/images/logo.png" alt="logo"></a>
     <ul id="navbar-lg" class="d-md-flex justify-content-center align-items-center">
     </ul>
     <div id="navbar-md" class="dropdown">
@@ -123,10 +123,9 @@ $(document).ready(function () {
               src="${gitHubURL + item.image}"
               alt=""
             />
-            <span
-              class="position-absolute top-50 start-50 translate-middle bg-dark text-light p-2 h6"
-              >${item.title}</span
-            >
+            <span class="d-flex justify-content-center align-items-center position-absolute top-50 start-50 translate-middle bg-dark text-light p-2 h6">
+                ${item.title}
+            </span>
           </a>
     `
     )
